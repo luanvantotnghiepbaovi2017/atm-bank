@@ -1,0 +1,6 @@
+framework module Pods_ATMBankTests {
+  umbrella header "Pods-ATMBankTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

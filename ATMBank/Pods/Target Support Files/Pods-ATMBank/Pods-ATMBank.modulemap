@@ -1,0 +1,6 @@
+framework module Pods_ATMBank {
+  umbrella header "Pods-ATMBank-umbrella.h"
+
+  export *
+  module * { export * }
+}

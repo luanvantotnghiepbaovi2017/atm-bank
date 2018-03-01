@@ -1,0 +1,1005 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1C9ECF80C5959EE05A352ADB /* Pods_ATMBankTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D681F1709A34462519AE1C1 /* Pods_ATMBankTests.framework */; };
+		391D181920482CBB0090C862 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391D181820482CBB0090C862 /* Helper.swift */; };
+		397A7247204316DF0035C004 /* UIStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397A7246204316DF0035C004 /* UIStoryboard.swift */; };
+		397A7249204317160035C004 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397A7248204317160035C004 /* String.swift */; };
+		397A724C204317770035C004 /* LocalizeHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397A724B204317770035C004 /* LocalizeHelper.swift */; };
+		397A724E204317820035C004 /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397A724D204317810035C004 /* Language.swift */; };
+		397A7250204317890035C004 /* Localizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397A724F204317890035C004 /* Localizer.swift */; };
+		397A72522043203E0035C004 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397A72512043203E0035C004 /* UIView.swift */; };
+		397A7256204334440035C004 /* ListOfBanksCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397A7254204334440035C004 /* ListOfBanksCell.swift */; };
+		397A7257204334440035C004 /* ListOfBanksCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 397A7255204334440035C004 /* ListOfBanksCell.xib */; };
+		397A725920458FD80035C004 /* UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397A725820458FD80035C004 /* UITextField.swift */; };
+		39E359CA2042E5C5002CF86E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E359C92042E5C5002CF86E /* AppDelegate.swift */; };
+		39E359CF2042E5C5002CF86E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39E359CD2042E5C5002CF86E /* Main.storyboard */; };
+		39E359D22042E5C5002CF86E /* ATMBank.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 39E359D02042E5C5002CF86E /* ATMBank.xcdatamodeld */; };
+		39E359D42042E5C5002CF86E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39E359D32042E5C5002CF86E /* Assets.xcassets */; };
+		39E359D72042E5C5002CF86E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39E359D52042E5C5002CF86E /* LaunchScreen.storyboard */; };
+		39E359E22042E5C5002CF86E /* ATMBankTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E359E12042E5C5002CF86E /* ATMBankTests.swift */; };
+		39E359ED2042E5C5002CF86E /* ATMBankUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E359EC2042E5C5002CF86E /* ATMBankUITests.swift */; };
+		39E35A042042ECDC002CF86E /* ListOfBanksInVN.json in Resources */ = {isa = PBXBuildFile; fileRef = 39E35A032042ECDC002CF86E /* ListOfBanksInVN.json */; };
+		39E6165B204302CE00B8B742 /* Bank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E6165A204302CE00B8B742 /* Bank.swift */; };
+		39E6165D204303E600B8B742 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E6165C204303E600B8B742 /* Location.swift */; };
+		39E6165F2043084E00B8B742 /* ListOfBanksViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E6165E2043084E00B8B742 /* ListOfBanksViewModel.swift */; };
+		39E6166120430AF400B8B742 /* ListOfBanksProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E6166020430AF400B8B742 /* ListOfBanksProvider.swift */; };
+		39E6166320430B8200B8B742 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E6166220430B8200B8B742 /* Constant.swift */; };
+		39E6166520430D5700B8B742 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E6166420430D5700B8B742 /* HomeViewController.swift */; };
+		39E6166A2043104000B8B742 /* Lato-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 39E616682043104000B8B742 /* Lato-Bold.ttf */; };
+		39E6166B2043104000B8B742 /* Lato-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 39E616692043104000B8B742 /* Lato-Regular.ttf */; };
+		39E6166D2043108000B8B742 /* ListOfBanksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E6166C2043108000B8B742 /* ListOfBanksViewController.swift */; };
+		39E6166F2043108900B8B742 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E6166E2043108900B8B742 /* HistoryViewController.swift */; };
+		BCA7B6E55D9F717398EAD0CC /* Pods_ATMBankUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE8488DFF2FF73AE0F38E9A7 /* Pods_ATMBankUITests.framework */; };
+		FF7563DF14A739C1865299D0 /* Pods_ATMBank.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50C6AA5D0317163A55ED4780 /* Pods_ATMBank.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		39E359DE2042E5C5002CF86E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 39E359BE2042E5C5002CF86E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 39E359C52042E5C5002CF86E;
+			remoteInfo = ATMBank;
+		};
+		39E359E92042E5C5002CF86E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 39E359BE2042E5C5002CF86E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 39E359C52042E5C5002CF86E;
+			remoteInfo = ATMBank;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		159B0CCB3678D2596FBD288D /* Pods-ATMBank.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ATMBank.release.xcconfig"; path = "Pods/Target Support Files/Pods-ATMBank/Pods-ATMBank.release.xcconfig"; sourceTree = "<group>"; };
+		177AAFD3D7EE76A5B8EA4C7A /* Pods-ATMBankUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ATMBankUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ATMBankUITests/Pods-ATMBankUITests.release.xcconfig"; sourceTree = "<group>"; };
+		2D681F1709A34462519AE1C1 /* Pods_ATMBankTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ATMBankTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		391D181820482CBB0090C862 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		397A7246204316DF0035C004 /* UIStoryboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIStoryboard.swift; sourceTree = "<group>"; };
+		397A7248204317160035C004 /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		397A724B204317770035C004 /* LocalizeHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalizeHelper.swift; sourceTree = "<group>"; };
+		397A724D204317810035C004 /* Language.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Language.swift; sourceTree = "<group>"; };
+		397A724F204317890035C004 /* Localizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Localizer.swift; sourceTree = "<group>"; };
+		397A72512043203E0035C004 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		397A7254204334440035C004 /* ListOfBanksCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfBanksCell.swift; sourceTree = "<group>"; };
+		397A7255204334440035C004 /* ListOfBanksCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListOfBanksCell.xib; sourceTree = "<group>"; };
+		397A725820458FD80035C004 /* UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextField.swift; sourceTree = "<group>"; };
+		39E359C62042E5C5002CF86E /* ATMBank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ATMBank.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		39E359C92042E5C5002CF86E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		39E359CE2042E5C5002CF86E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		39E359D12042E5C5002CF86E /* ATMBank.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ATMBank.xcdatamodel; sourceTree = "<group>"; };
+		39E359D32042E5C5002CF86E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		39E359D62042E5C5002CF86E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		39E359D82042E5C5002CF86E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		39E359DD2042E5C5002CF86E /* ATMBankTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ATMBankTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		39E359E12042E5C5002CF86E /* ATMBankTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATMBankTests.swift; sourceTree = "<group>"; };
+		39E359E32042E5C5002CF86E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		39E359E82042E5C5002CF86E /* ATMBankUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ATMBankUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		39E359EC2042E5C5002CF86E /* ATMBankUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATMBankUITests.swift; sourceTree = "<group>"; };
+		39E359EE2042E5C5002CF86E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		39E35A032042ECDC002CF86E /* ListOfBanksInVN.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ListOfBanksInVN.json; sourceTree = "<group>"; };
+		39E6165A204302CE00B8B742 /* Bank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bank.swift; sourceTree = "<group>"; };
+		39E6165C204303E600B8B742 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		39E6165E2043084E00B8B742 /* ListOfBanksViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfBanksViewModel.swift; sourceTree = "<group>"; };
+		39E6166020430AF400B8B742 /* ListOfBanksProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfBanksProvider.swift; sourceTree = "<group>"; };
+		39E6166220430B8200B8B742 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		39E6166420430D5700B8B742 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		39E616682043104000B8B742 /* Lato-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Bold.ttf"; sourceTree = "<group>"; };
+		39E616692043104000B8B742 /* Lato-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Regular.ttf"; sourceTree = "<group>"; };
+		39E6166C2043108000B8B742 /* ListOfBanksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfBanksViewController.swift; sourceTree = "<group>"; };
+		39E6166E2043108900B8B742 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		420D19AE0E62E219FC921979 /* Pods-ATMBank.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ATMBank.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ATMBank/Pods-ATMBank.debug.xcconfig"; sourceTree = "<group>"; };
+		50C6AA5D0317163A55ED4780 /* Pods_ATMBank.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ATMBank.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8842B516D37D7C7942CE8560 /* Pods-ATMBankUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ATMBankUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ATMBankUITests/Pods-ATMBankUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		AE8488DFF2FF73AE0F38E9A7 /* Pods_ATMBankUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ATMBankUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAB55BD4E30306860237994B /* Pods-ATMBankTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ATMBankTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ATMBankTests/Pods-ATMBankTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F8CE17C150B3F0EA757D3DAA /* Pods-ATMBankTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ATMBankTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ATMBankTests/Pods-ATMBankTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		39E359C32042E5C5002CF86E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF7563DF14A739C1865299D0 /* Pods_ATMBank.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39E359DA2042E5C5002CF86E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C9ECF80C5959EE05A352ADB /* Pods_ATMBankTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39E359E52042E5C5002CF86E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCA7B6E55D9F717398EAD0CC /* Pods_ATMBankUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		397A724A2043175F0035C004 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				397A724F204317890035C004 /* Localizer.swift */,
+				397A724D204317810035C004 /* Language.swift */,
+				397A724B204317770035C004 /* LocalizeHelper.swift */,
+				391D181820482CBB0090C862 /* Helper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		397A7253204334280035C004 /* CollectionViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				397A7254204334440035C004 /* ListOfBanksCell.swift */,
+				397A7255204334440035C004 /* ListOfBanksCell.xib */,
+			);
+			path = CollectionViewCells;
+			sourceTree = "<group>";
+		};
+		39E359BD2042E5C5002CF86E = {
+			isa = PBXGroup;
+			children = (
+				39E359C82042E5C5002CF86E /* ATMBank */,
+				39E359E02042E5C5002CF86E /* ATMBankTests */,
+				39E359EB2042E5C5002CF86E /* ATMBankUITests */,
+				39E359C72042E5C5002CF86E /* Products */,
+				DE2A56997C619E459FBC3F3C /* Pods */,
+				4F2CAA80DD0324A4611016FE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		39E359C72042E5C5002CF86E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				39E359C62042E5C5002CF86E /* ATMBank.app */,
+				39E359DD2042E5C5002CF86E /* ATMBankTests.xctest */,
+				39E359E82042E5C5002CF86E /* ATMBankUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		39E359C82042E5C5002CF86E /* ATMBank */ = {
+			isa = PBXGroup;
+			children = (
+				39E359C92042E5C5002CF86E /* AppDelegate.swift */,
+				39E616702043116F00B8B742 /* Views */,
+				39E359FF2042E65F002CF86E /* StoryBoards */,
+				39E359FE2042E650002CF86E /* Shared */,
+				39E359FD2042E644002CF86E /* ViewControllers */,
+				39E359FB2042E611002CF86E /* ViewModels */,
+				39E359FA2042E608002CF86E /* Models */,
+				39E359D32042E5C5002CF86E /* Assets.xcassets */,
+				39E359D52042E5C5002CF86E /* LaunchScreen.storyboard */,
+				39E359D82042E5C5002CF86E /* Info.plist */,
+				39E359D02042E5C5002CF86E /* ATMBank.xcdatamodeld */,
+			);
+			path = ATMBank;
+			sourceTree = "<group>";
+		};
+		39E359E02042E5C5002CF86E /* ATMBankTests */ = {
+			isa = PBXGroup;
+			children = (
+				39E359E12042E5C5002CF86E /* ATMBankTests.swift */,
+				39E359E32042E5C5002CF86E /* Info.plist */,
+			);
+			path = ATMBankTests;
+			sourceTree = "<group>";
+		};
+		39E359EB2042E5C5002CF86E /* ATMBankUITests */ = {
+			isa = PBXGroup;
+			children = (
+				39E359EC2042E5C5002CF86E /* ATMBankUITests.swift */,
+				39E359EE2042E5C5002CF86E /* Info.plist */,
+			);
+			path = ATMBankUITests;
+			sourceTree = "<group>";
+		};
+		39E359FA2042E608002CF86E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				39E6165A204302CE00B8B742 /* Bank.swift */,
+				39E6165C204303E600B8B742 /* Location.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		39E359FB2042E611002CF86E /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				39E6165E2043084E00B8B742 /* ListOfBanksViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		39E359FD2042E644002CF86E /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				39E6166420430D5700B8B742 /* HomeViewController.swift */,
+				39E6166C2043108000B8B742 /* ListOfBanksViewController.swift */,
+				39E6166E2043108900B8B742 /* HistoryViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		39E359FE2042E650002CF86E /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				397A724A2043175F0035C004 /* Helpers */,
+				39E616532042F99500B8B742 /* DataProviders */,
+				39E35A022042E68E002CF86E /* Resources */,
+				39E35A012042E686002CF86E /* Extensions */,
+				39E35A002042E673002CF86E /* Constant */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		39E359FF2042E65F002CF86E /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				39E359CD2042E5C5002CF86E /* Main.storyboard */,
+			);
+			path = StoryBoards;
+			sourceTree = "<group>";
+		};
+		39E35A002042E673002CF86E /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				39E6166220430B8200B8B742 /* Constant.swift */,
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
+		39E35A012042E686002CF86E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				397A7248204317160035C004 /* String.swift */,
+				397A7246204316DF0035C004 /* UIStoryboard.swift */,
+				397A72512043203E0035C004 /* UIView.swift */,
+				397A725820458FD80035C004 /* UITextField.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		39E35A022042E68E002CF86E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				39E616672043102600B8B742 /* Font */,
+				39E616662043101700B8B742 /* JSON */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		39E616532042F99500B8B742 /* DataProviders */ = {
+			isa = PBXGroup;
+			children = (
+				39E6166020430AF400B8B742 /* ListOfBanksProvider.swift */,
+			);
+			path = DataProviders;
+			sourceTree = "<group>";
+		};
+		39E616662043101700B8B742 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				39E35A032042ECDC002CF86E /* ListOfBanksInVN.json */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
+		39E616672043102600B8B742 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				39E616682043104000B8B742 /* Lato-Bold.ttf */,
+				39E616692043104000B8B742 /* Lato-Regular.ttf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		39E616702043116F00B8B742 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				397A7253204334280035C004 /* CollectionViewCells */,
+				39E616712043118400B8B742 /* TableViewCells */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		39E616712043118400B8B742 /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+		4F2CAA80DD0324A4611016FE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				50C6AA5D0317163A55ED4780 /* Pods_ATMBank.framework */,
+				2D681F1709A34462519AE1C1 /* Pods_ATMBankTests.framework */,
+				AE8488DFF2FF73AE0F38E9A7 /* Pods_ATMBankUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DE2A56997C619E459FBC3F3C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				420D19AE0E62E219FC921979 /* Pods-ATMBank.debug.xcconfig */,
+				159B0CCB3678D2596FBD288D /* Pods-ATMBank.release.xcconfig */,
+				EAB55BD4E30306860237994B /* Pods-ATMBankTests.debug.xcconfig */,
+				F8CE17C150B3F0EA757D3DAA /* Pods-ATMBankTests.release.xcconfig */,
+				8842B516D37D7C7942CE8560 /* Pods-ATMBankUITests.debug.xcconfig */,
+				177AAFD3D7EE76A5B8EA4C7A /* Pods-ATMBankUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		39E359C52042E5C5002CF86E /* ATMBank */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 39E359F12042E5C5002CF86E /* Build configuration list for PBXNativeTarget "ATMBank" */;
+			buildPhases = (
+				1959C3C5CA7CFD6E084EC2FB /* [CP] Check Pods Manifest.lock */,
+				39E359C22042E5C5002CF86E /* Sources */,
+				39E359C32042E5C5002CF86E /* Frameworks */,
+				39E359C42042E5C5002CF86E /* Resources */,
+				8DCFE56FFD73D84FAE428970 /* [CP] Embed Pods Frameworks */,
+				D2F8F26B1B2798767BCA8CC9 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ATMBank;
+			productName = ATMBank;
+			productReference = 39E359C62042E5C5002CF86E /* ATMBank.app */;
+			productType = "com.apple.product-type.application";
+		};
+		39E359DC2042E5C5002CF86E /* ATMBankTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 39E359F42042E5C5002CF86E /* Build configuration list for PBXNativeTarget "ATMBankTests" */;
+			buildPhases = (
+				682F1D0AAD8A77FEE806FF20 /* [CP] Check Pods Manifest.lock */,
+				39E359D92042E5C5002CF86E /* Sources */,
+				39E359DA2042E5C5002CF86E /* Frameworks */,
+				39E359DB2042E5C5002CF86E /* Resources */,
+				A1D90620EFBFFB99447FCD82 /* [CP] Embed Pods Frameworks */,
+				2002FA803E4B4AA69F7991A3 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				39E359DF2042E5C5002CF86E /* PBXTargetDependency */,
+			);
+			name = ATMBankTests;
+			productName = ATMBankTests;
+			productReference = 39E359DD2042E5C5002CF86E /* ATMBankTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		39E359E72042E5C5002CF86E /* ATMBankUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 39E359F72042E5C5002CF86E /* Build configuration list for PBXNativeTarget "ATMBankUITests" */;
+			buildPhases = (
+				84BF7FEFCD7ECA86955D786D /* [CP] Check Pods Manifest.lock */,
+				39E359E42042E5C5002CF86E /* Sources */,
+				39E359E52042E5C5002CF86E /* Frameworks */,
+				39E359E62042E5C5002CF86E /* Resources */,
+				D9C4F7476110A08029646A89 /* [CP] Embed Pods Frameworks */,
+				ED8B88924F50AFCE4D18693C /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				39E359EA2042E5C5002CF86E /* PBXTargetDependency */,
+			);
+			name = ATMBankUITests;
+			productName = ATMBankUITests;
+			productReference = 39E359E82042E5C5002CF86E /* ATMBankUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		39E359BE2042E5C5002CF86E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = TranQuocBao;
+				TargetAttributes = {
+					39E359C52042E5C5002CF86E = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					39E359DC2042E5C5002CF86E = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 39E359C52042E5C5002CF86E;
+					};
+					39E359E72042E5C5002CF86E = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 39E359C52042E5C5002CF86E;
+					};
+				};
+			};
+			buildConfigurationList = 39E359C12042E5C5002CF86E /* Build configuration list for PBXProject "ATMBank" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 39E359BD2042E5C5002CF86E;
+			productRefGroup = 39E359C72042E5C5002CF86E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				39E359C52042E5C5002CF86E /* ATMBank */,
+				39E359DC2042E5C5002CF86E /* ATMBankTests */,
+				39E359E72042E5C5002CF86E /* ATMBankUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		39E359C42042E5C5002CF86E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39E359D72042E5C5002CF86E /* LaunchScreen.storyboard in Resources */,
+				39E6166B2043104000B8B742 /* Lato-Regular.ttf in Resources */,
+				397A7257204334440035C004 /* ListOfBanksCell.xib in Resources */,
+				39E6166A2043104000B8B742 /* Lato-Bold.ttf in Resources */,
+				39E359D42042E5C5002CF86E /* Assets.xcassets in Resources */,
+				39E359CF2042E5C5002CF86E /* Main.storyboard in Resources */,
+				39E35A042042ECDC002CF86E /* ListOfBanksInVN.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39E359DB2042E5C5002CF86E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39E359E62042E5C5002CF86E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1959C3C5CA7CFD6E084EC2FB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ATMBank-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2002FA803E4B4AA69F7991A3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ATMBankTests/Pods-ATMBankTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		682F1D0AAD8A77FEE806FF20 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ATMBankTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		84BF7FEFCD7ECA86955D786D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ATMBankUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8DCFE56FFD73D84FAE428970 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ATMBank/Pods-ATMBank-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/ReachabilitySwift/Reachability.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reachability.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ATMBank/Pods-ATMBank-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A1D90620EFBFFB99447FCD82 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ATMBankTests/Pods-ATMBankTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D2F8F26B1B2798767BCA8CC9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ATMBank/Pods-ATMBank-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D9C4F7476110A08029646A89 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ATMBankUITests/Pods-ATMBankUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ED8B88924F50AFCE4D18693C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ATMBankUITests/Pods-ATMBankUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		39E359C22042E5C5002CF86E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				397A72522043203E0035C004 /* UIView.swift in Sources */,
+				39E6166120430AF400B8B742 /* ListOfBanksProvider.swift in Sources */,
+				39E359D22042E5C5002CF86E /* ATMBank.xcdatamodeld in Sources */,
+				39E6165F2043084E00B8B742 /* ListOfBanksViewModel.swift in Sources */,
+				397A724E204317820035C004 /* Language.swift in Sources */,
+				39E6166F2043108900B8B742 /* HistoryViewController.swift in Sources */,
+				397A7247204316DF0035C004 /* UIStoryboard.swift in Sources */,
+				39E6165B204302CE00B8B742 /* Bank.swift in Sources */,
+				391D181920482CBB0090C862 /* Helper.swift in Sources */,
+				39E6166520430D5700B8B742 /* HomeViewController.swift in Sources */,
+				397A7250204317890035C004 /* Localizer.swift in Sources */,
+				397A724C204317770035C004 /* LocalizeHelper.swift in Sources */,
+				397A725920458FD80035C004 /* UITextField.swift in Sources */,
+				39E6166320430B8200B8B742 /* Constant.swift in Sources */,
+				39E6166D2043108000B8B742 /* ListOfBanksViewController.swift in Sources */,
+				397A7256204334440035C004 /* ListOfBanksCell.swift in Sources */,
+				39E359CA2042E5C5002CF86E /* AppDelegate.swift in Sources */,
+				397A7249204317160035C004 /* String.swift in Sources */,
+				39E6165D204303E600B8B742 /* Location.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39E359D92042E5C5002CF86E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39E359E22042E5C5002CF86E /* ATMBankTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39E359E42042E5C5002CF86E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39E359ED2042E5C5002CF86E /* ATMBankUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		39E359DF2042E5C5002CF86E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 39E359C52042E5C5002CF86E /* ATMBank */;
+			targetProxy = 39E359DE2042E5C5002CF86E /* PBXContainerItemProxy */;
+		};
+		39E359EA2042E5C5002CF86E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 39E359C52042E5C5002CF86E /* ATMBank */;
+			targetProxy = 39E359E92042E5C5002CF86E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		39E359CD2042E5C5002CF86E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				39E359CE2042E5C5002CF86E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		39E359D52042E5C5002CF86E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				39E359D62042E5C5002CF86E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		39E359EF2042E5C5002CF86E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		39E359F02042E5C5002CF86E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		39E359F22042E5C5002CF86E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 420D19AE0E62E219FC921979 /* Pods-ATMBank.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4395L5MX45;
+				INFOPLIST_FILE = ATMBank/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tranquocbao.ios.project.ATMBank;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		39E359F32042E5C5002CF86E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 159B0CCB3678D2596FBD288D /* Pods-ATMBank.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4395L5MX45;
+				INFOPLIST_FILE = ATMBank/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tranquocbao.ios.project.ATMBank;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		39E359F52042E5C5002CF86E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EAB55BD4E30306860237994B /* Pods-ATMBankTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4395L5MX45;
+				INFOPLIST_FILE = ATMBankTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tranquocbao.ios.project.ATMBankTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ATMBank.app/ATMBank";
+			};
+			name = Debug;
+		};
+		39E359F62042E5C5002CF86E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F8CE17C150B3F0EA757D3DAA /* Pods-ATMBankTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4395L5MX45;
+				INFOPLIST_FILE = ATMBankTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tranquocbao.ios.project.ATMBankTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ATMBank.app/ATMBank";
+			};
+			name = Release;
+		};
+		39E359F82042E5C5002CF86E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8842B516D37D7C7942CE8560 /* Pods-ATMBankUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4395L5MX45;
+				INFOPLIST_FILE = ATMBankUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tranquocbao.ios.project.ATMBankUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ATMBank;
+			};
+			name = Debug;
+		};
+		39E359F92042E5C5002CF86E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 177AAFD3D7EE76A5B8EA4C7A /* Pods-ATMBankUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4395L5MX45;
+				INFOPLIST_FILE = ATMBankUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tranquocbao.ios.project.ATMBankUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ATMBank;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		39E359C12042E5C5002CF86E /* Build configuration list for PBXProject "ATMBank" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39E359EF2042E5C5002CF86E /* Debug */,
+				39E359F02042E5C5002CF86E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		39E359F12042E5C5002CF86E /* Build configuration list for PBXNativeTarget "ATMBank" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39E359F22042E5C5002CF86E /* Debug */,
+				39E359F32042E5C5002CF86E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		39E359F42042E5C5002CF86E /* Build configuration list for PBXNativeTarget "ATMBankTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39E359F52042E5C5002CF86E /* Debug */,
+				39E359F62042E5C5002CF86E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		39E359F72042E5C5002CF86E /* Build configuration list for PBXNativeTarget "ATMBankUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39E359F82042E5C5002CF86E /* Debug */,
+				39E359F92042E5C5002CF86E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		39E359D02042E5C5002CF86E /* ATMBank.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				39E359D12042E5C5002CF86E /* ATMBank.xcdatamodel */,
+			);
+			currentVersion = 39E359D12042E5C5002CF86E /* ATMBank.xcdatamodel */;
+			path = ATMBank.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 39E359BE2042E5C5002CF86E /* Project object */;
+}

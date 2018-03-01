@@ -1,0 +1,82 @@
+[
+    {
+        "id": "1",
+        "fullname_vn": "Á Châu",
+        "fullname_en": "Asia Commercial Bank",
+        "shortname": "ACB",
+        "website": "http://acb.com.vn/",
+        "thumbnail": "acb_bank"
+    },
+    {
+        "id": "2",
+        "fullname_vn": "Đông Á",
+        "fullname_en": "DongA Bank",
+        "shortname": "DAB",
+        "website": "http://dongabank.com.vn/",
+        "thumbnail": "dong_a_bank"
+    },
+    {
+        "id": "3",
+        "fullname_vn": "Đông Nam Á",
+        "fullname_en": "SeABank",
+        "shortname": "SeABank",
+        "website": "https://seabank.com.vn/",
+        "thumbnail": "sea_bank"
+    },
+    {
+        "id": "4",
+        "fullname_vn": "Đại Dương",
+        "fullname_en": "Oceanbank",
+        "shortname": "Oceanbank",
+        "website": "http://oceanbank.vn/",
+        "thumbnail": "ocean_bank"
+    },
+    {
+        "id": "5",
+        "fullname_vn": "An Bình",
+        "fullname_en": "ABBank",
+        "shortname": "ABBank",
+        "website": "https://abbank.vn/",
+        "thumbnail": "an_binh_bank"
+    },
+    {
+        "id": "6",
+        "fullname_vn": "Bắc Á",
+        "fullname_en": "NASBank",
+        "shortname": "NASB",
+        "website": "https://www.baca-bank.vn/SitePages/trang-chu.aspx",
+        "thumbnail": "bac_a_bank"
+    },
+    {
+        "id": "7",
+        "fullname_vn": "Dầu khí Toàn Cầu",
+        "fullname_en": "GP.Bank",
+        "shortname": "GP.Bank",
+        "website": "https://www.gpbank.com.vn/",
+        "thumbnail": "gp_bank"
+    },
+    {
+        "id": "8",
+        "fullname_vn": "Bản Việt",
+        "fullname_en": "VIET CAPITAL BANK",
+        "shortname": "VCCB",
+        "website": "https://www.vietcapitalbank.com.vn/web/guest/trang-chu",
+        "thumbnail": "viet_capital_bank"
+    },
+    {
+        "id": "9",
+        "fullname_vn": "Hàng Hải Việt Nam",
+        "fullname_en": "Maritime Bank",
+        "shortname": "MSB",
+        "website": "https://www.msb.com.vn/",
+        "thumbnail": "maritime_bank"
+    },
+    {
+        "id": "10",
+        "fullname_vn": "Kỹ Thương Việt Nam",
+        "fullname_en": "Techcombank",
+        "shortname": "Techcombank",
+        "website": "https://www.techcombank.com.vn/trang-chu",
+        "thumbnail": "techcom_bank"
+    }
+]

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="29N-5C-S88">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="AvenirNext.ttc">
+            <string>AvenirNext-Medium</string>
+        </array>
+        <array key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--List Of Banks View Controller-->
+        <scene sceneID="yB2-bt-Twv">
+            <objects>
+                <viewController storyboardIdentifier="ListOfBanksViewController" id="29N-5C-S88" customClass="ListOfBanksViewController" customModule="ATMBank" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xkZ-0H-XZk">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="LQJ-Jj-zZF">
+                                <rect key="frame" x="0.0" y="85" width="375" height="582"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="L3g-y6-kIa">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="10" maxX="0.0" maxY="10"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kyP-QP-5EU">
+                                <rect key="frame" x="0.0" y="20" width="375" height="60"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NJx-46-QOy">
+                                        <rect key="frame" x="10" y="20" width="355" height="40"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Nhập từ khoá..." minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="n45-mm-WeH">
+                                                <rect key="frame" x="0.0" y="0.0" width="307" height="40"/>
+                                                <color key="textColor" red="0.4756349325" green="0.47564673419999998" blue="0.47564041610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="20"/>
+                                                <textInputTraits key="textInputTraits" returnKeyType="search"/>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RnM-aE-0Aa">
+                                                <rect key="frame" x="307" y="0.0" width="40" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="abB-kR-OtM"/>
+                                                    <constraint firstAttribute="width" constant="40" id="c8M-Xy-2b5"/>
+                                                </constraints>
+                                                <state key="normal" image="search"/>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="n45-mm-WeH" firstAttribute="top" secondItem="NJx-46-QOy" secondAttribute="top" id="6W3-8n-sux"/>
+                                            <constraint firstAttribute="bottom" secondItem="n45-mm-WeH" secondAttribute="bottom" id="F3P-jc-Ibe"/>
+                                            <constraint firstAttribute="height" constant="40" id="L6g-rm-yQ5"/>
+                                            <constraint firstItem="RnM-aE-0Aa" firstAttribute="leading" secondItem="n45-mm-WeH" secondAttribute="trailing" id="LZS-jv-41C"/>
+                                            <constraint firstItem="n45-mm-WeH" firstAttribute="leading" secondItem="NJx-46-QOy" secondAttribute="leading" id="SJu-IO-goX"/>
+                                            <constraint firstAttribute="trailing" secondItem="RnM-aE-0Aa" secondAttribute="trailing" constant="8" id="qx2-4g-39m"/>
+                                            <constraint firstItem="RnM-aE-0Aa" firstAttribute="top" secondItem="NJx-46-QOy" secondAttribute="top" id="rAT-tT-NE0"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <integer key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="1bs-9K-c9w"/>
+                                    <constraint firstAttribute="trailing" secondItem="NJx-46-QOy" secondAttribute="trailing" constant="10" id="3rB-hq-3ux"/>
+                                    <constraint firstItem="NJx-46-QOy" firstAttribute="leading" secondItem="kyP-QP-5EU" secondAttribute="leading" constant="10" id="esA-SU-3Od"/>
+                                    <constraint firstAttribute="bottom" secondItem="NJx-46-QOy" secondAttribute="bottom" id="fuC-A8-wKh"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="LQJ-Jj-zZF" firstAttribute="top" secondItem="kyP-QP-5EU" secondAttribute="bottom" constant="5" id="2Zj-z1-Tft"/>
+                            <constraint firstItem="LQJ-Jj-zZF" firstAttribute="leading" secondItem="tb7-J4-63t" secondAttribute="leading" id="5oy-YH-sax"/>
+                            <constraint firstItem="LQJ-Jj-zZF" firstAttribute="bottom" secondItem="tb7-J4-63t" secondAttribute="bottom" id="Ay9-dp-hjQ"/>
+                            <constraint firstItem="LQJ-Jj-zZF" firstAttribute="trailing" secondItem="tb7-J4-63t" secondAttribute="trailing" id="GPi-hU-dzN"/>
+                            <constraint firstItem="kyP-QP-5EU" firstAttribute="leading" secondItem="tb7-J4-63t" secondAttribute="leading" id="PVy-WK-CIW"/>
+                            <constraint firstItem="kyP-QP-5EU" firstAttribute="trailing" secondItem="tb7-J4-63t" secondAttribute="trailing" id="apN-W1-7lQ"/>
+                            <constraint firstItem="kyP-QP-5EU" firstAttribute="top" secondItem="tb7-J4-63t" secondAttribute="top" id="nOC-c9-boI"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="tb7-J4-63t"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="jTJ-yn-Wyr"/>
+                    <connections>
+                        <outlet property="buttonSearchAndClose" destination="RnM-aE-0Aa" id="5ZE-jG-Gwt"/>
+                        <outlet property="collectionViewListOfBanks" destination="LQJ-Jj-zZF" id="hVW-WC-ArQ"/>
+                        <outlet property="textFieldSearch" destination="n45-mm-WeH" id="jbY-8A-6vk"/>
+                        <outlet property="viewSearch" destination="NJx-46-QOy" id="nNE-f8-XCu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zwy-iJ-kGe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1600.8" y="31.934032983508249"/>
+        </scene>
+        <!--History View Controller-->
+        <scene sceneID="PT4-Ud-6DR">
+            <objects>
+                <viewController storyboardIdentifier="HistoryViewController" id="L2v-Fd-Acb" customClass="HistoryViewController" customModule="ATMBank" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="E3U-VJ-03n">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HISTORY" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JhS-nV-12A">
+                                <rect key="frame" x="125" y="315.5" width="125.5" height="36"/>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="30"/>
+                                <color key="textColor" red="0.75406885150000003" green="0.75408679249999999" blue="0.75407713649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="JhS-nV-12A" firstAttribute="centerX" secondItem="E3U-VJ-03n" secondAttribute="centerX" id="ZaN-Jn-C8R"/>
+                            <constraint firstItem="JhS-nV-12A" firstAttribute="centerY" secondItem="E3U-VJ-03n" secondAttribute="centerY" id="nEe-nB-m8k"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="pzK-5Y-krp"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IWC-T2-02c" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2336.8000000000002" y="31.934032983508249"/>
+        </scene>
+        <!--HOME-->
+        <scene sceneID="cuX-Bl-HB5">
+            <objects>
+                <viewController storyboardIdentifier="HomeViewController" title="HOME" id="ljg-yJ-oeZ" customClass="HomeViewController" customModule="ATMBank" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="yaM-Iw-gqM"/>
+                        <viewControllerLayoutGuide type="bottom" id="e0h-is-YY3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2Tz-ji-h3T">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="qmn-cZ-Ypz"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="tYN-t4-dw5"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ryh-Lb-08I" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="832.79999999999995" y="31.934032983508249"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="search" width="15" height="15"/>
+    </resources>
+</document>
