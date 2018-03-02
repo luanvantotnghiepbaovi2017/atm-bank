@@ -18,6 +18,8 @@
 		397A7256204334440035C004 /* ListOfBanksCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397A7254204334440035C004 /* ListOfBanksCell.swift */; };
 		397A7257204334440035C004 /* ListOfBanksCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 397A7255204334440035C004 /* ListOfBanksCell.xib */; };
 		397A725920458FD80035C004 /* UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397A725820458FD80035C004 /* UITextField.swift */; };
+		39AF4B1B20499E0E00928FA4 /* SuburbanDistrictHCM.json in Resources */ = {isa = PBXBuildFile; fileRef = 39AF4B1920499E0E00928FA4 /* SuburbanDistrictHCM.json */; };
+		39AF4B1C20499E0E00928FA4 /* DistrictHCM.json in Resources */ = {isa = PBXBuildFile; fileRef = 39AF4B1A20499E0E00928FA4 /* DistrictHCM.json */; };
 		39E359CA2042E5C5002CF86E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E359C92042E5C5002CF86E /* AppDelegate.swift */; };
 		39E359CF2042E5C5002CF86E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39E359CD2042E5C5002CF86E /* Main.storyboard */; };
 		39E359D22042E5C5002CF86E /* ATMBank.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 39E359D02042E5C5002CF86E /* ATMBank.xcdatamodeld */; };
@@ -71,6 +73,8 @@
 		397A7254204334440035C004 /* ListOfBanksCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfBanksCell.swift; sourceTree = "<group>"; };
 		397A7255204334440035C004 /* ListOfBanksCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListOfBanksCell.xib; sourceTree = "<group>"; };
 		397A725820458FD80035C004 /* UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextField.swift; sourceTree = "<group>"; };
+		39AF4B1920499E0E00928FA4 /* SuburbanDistrictHCM.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SuburbanDistrictHCM.json; sourceTree = "<group>"; };
+		39AF4B1A20499E0E00928FA4 /* DistrictHCM.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = DistrictHCM.json; sourceTree = "<group>"; };
 		39E359C62042E5C5002CF86E /* ATMBank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ATMBank.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		39E359C92042E5C5002CF86E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		39E359CE2042E5C5002CF86E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -149,6 +153,15 @@
 				397A7255204334440035C004 /* ListOfBanksCell.xib */,
 			);
 			path = CollectionViewCells;
+			sourceTree = "<group>";
+		};
+		39AF4B1820499E0100928FA4 /* HCM */ = {
+			isa = PBXGroup;
+			children = (
+				39AF4B1A20499E0E00928FA4 /* DistrictHCM.json */,
+				39AF4B1920499E0E00928FA4 /* SuburbanDistrictHCM.json */,
+			);
+			path = HCM;
 			sourceTree = "<group>";
 		};
 		39E359BD2042E5C5002CF86E = {
@@ -295,6 +308,7 @@
 		39E616662043101700B8B742 /* JSON */ = {
 			isa = PBXGroup;
 			children = (
+				39AF4B1820499E0100928FA4 /* HCM */,
 				39E35A032042ECDC002CF86E /* ListOfBanksInVN.json */,
 			);
 			path = JSON;
@@ -464,10 +478,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39AF4B1B20499E0E00928FA4 /* SuburbanDistrictHCM.json in Resources */,
 				39E359D72042E5C5002CF86E /* LaunchScreen.storyboard in Resources */,
 				39E6166B2043104000B8B742 /* Lato-Regular.ttf in Resources */,
 				397A7257204334440035C004 /* ListOfBanksCell.xib in Resources */,
 				39E6166A2043104000B8B742 /* Lato-Bold.ttf in Resources */,
+				39AF4B1C20499E0E00928FA4 /* DistrictHCM.json in Resources */,
 				39E359D42042E5C5002CF86E /* Assets.xcassets in Resources */,
 				39E359CF2042E5C5002CF86E /* Main.storyboard in Resources */,
 				39E35A042042ECDC002CF86E /* ListOfBanksInVN.json in Resources */,
