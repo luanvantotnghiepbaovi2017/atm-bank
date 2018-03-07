@@ -33,16 +33,22 @@ class ListOfBanksViewModel: ListOfBanksViewModelType {
     
     func searchBank(value: String) {
         var searchBank = [Bank]()
-        let searchText = value.uppercased().removeDiacritic()
+        let searchText = value.removingWhitespaces().uppercased().removeDiacritic()
         if currentLanguage == LanguageCode.vn {
             for bank in originalBankList {
                 if bank.fullnameVNForSearch.contains(find: searchText) {
+                    searchBank.append(bank)
+                }
+                else if bank.shortnameForSearch.contains(find: searchText) {
                     searchBank.append(bank)
                 }
             }
         } else {
             for bank in originalBankList {
                 if bank.fullNameENForSearch.contains(find: searchText) {
+                    searchBank.append(bank)
+                }
+                else if bank.shortnameForSearch.contains(find: searchText) {
                     searchBank.append(bank)
                 }
             }

@@ -14,6 +14,7 @@ class Bank: Decodable {
     var fullnameEN: String = ""
     var fullNameENForSearch: String = ""
     var shortname: String = ""
+    var shortnameForSearch: String = ""
     var website: String = ""
     var thumbnail: String = ""
     
@@ -32,13 +33,14 @@ class Bank: Decodable {
         id = try container.decode(String.self, forKey: .id)
         fullnameVN = "Ngân hàng \(try container.decode(String.self, forKey: .fullnameVN))"
         if fullnameVN.uppercased().contains(find: "Đ") {
-            fullnameVNForSearch = fullnameVN.uppercased().replacingOccurrences(of: "Đ", with: "D") .removeDiacritic()
+            fullnameVNForSearch = fullnameVN.removingWhitespaces().uppercased().replacingOccurrences(of: "Đ", with: "D") .removeDiacritic()
         } else {
-            fullnameVNForSearch = fullnameVN.uppercased().removeDiacritic()
+            fullnameVNForSearch = fullnameVN.removingWhitespaces().uppercased().removeDiacritic()
         }
         fullnameEN = try container.decode(String.self, forKey: .fullnameEN)
-        fullNameENForSearch = fullnameEN.uppercased()
+        fullNameENForSearch = fullnameEN.removingWhitespaces().uppercased()
         shortname = try container.decode(String.self, forKey: .shortname)
+        shortnameForSearch = shortname.removingWhitespaces().uppercased()
         website = try container.decode(String.self, forKey: .website)
         thumbnail = try container.decode(String.self, forKey: .thumbnail)
     }
