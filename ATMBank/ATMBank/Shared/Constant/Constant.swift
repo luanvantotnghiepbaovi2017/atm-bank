@@ -6,7 +6,7 @@
 //  Copyright © 2018 TranQuocBao. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 let currentLanguage = Language.currentAppleLanguage()
 
@@ -16,6 +16,15 @@ struct JSONFileName {
 
 struct UserDefaultKeys {
     static let PreferredLanguage = "PreferredLanguage"
+}
+
+struct Color {
+    struct TableView {
+        static let bankOptionBackgroundNormal = UIColor.white
+        static let bankOptionBackgroundSelected = UIColor(red: 83, green: 119, blue: 145)
+        static let bankOptionTextNormal = UIColor(red: 94, green: 94, blue: 94)
+        static let bankOptionTextSelected = UIColor.white
+    }
 }
 
 struct LanguageCode {

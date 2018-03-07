@@ -1,82 +1,298 @@
 [
     {
         "id": "1",
-        "fullname_vn": "Á Châu",
-        "fullname_en": "Asia Commercial Bank",
+        "fullname_vn": "Ngân hàng TMCP Á Châu",
+        "fullname_en": "Asia Commercial Joint Stock Bank",
         "shortname": "ACB",
         "website": "http://acb.com.vn/",
-        "thumbnail": "acb_bank"
+        "thumbnail": "ACB"
     },
     {
         "id": "2",
-        "fullname_vn": "Đông Á",
-        "fullname_en": "DongA Bank",
-        "shortname": "DAB",
+        "fullname_vn": "Ngân hàng TMCP Đông Á",
+        "fullname_en": "DongA Commercial Joint Stock Bank",
+        "shortname": "DongA Bank",
         "website": "http://dongabank.com.vn/",
-        "thumbnail": "dong_a_bank"
+        "thumbnail": "DONGA"
     },
     {
         "id": "3",
-        "fullname_vn": "Đông Nam Á",
-        "fullname_en": "SeABank",
+        "fullname_vn": "Ngân hàng TMCP Đông Nam Á",
+        "fullname_en": "Southeast Asia Joint Stock Commercial Bank",
         "shortname": "SeABank",
         "website": "https://seabank.com.vn/",
-        "thumbnail": "sea_bank"
+        "thumbnail": "SEA"
     },
     {
         "id": "4",
-        "fullname_vn": "Đại Dương",
-        "fullname_en": "Oceanbank",
+        "fullname_vn": "Ngân hàng TM TNHH MTV Đại Dương",
+        "fullname_en": "Ocean Commercial One Member Limited Liability Bank",
         "shortname": "Oceanbank",
         "website": "http://oceanbank.vn/",
-        "thumbnail": "ocean_bank"
+        "thumbnail": "OCEAN"
     },
     {
         "id": "5",
-        "fullname_vn": "An Bình",
-        "fullname_en": "ABBank",
+        "fullname_vn": "Ngân hàng TMCP An Bình",
+        "fullname_en": "An Binh Commercial Joint Stock Bank",
         "shortname": "ABBank",
         "website": "https://abbank.vn/",
-        "thumbnail": "an_binh_bank"
+        "thumbnail": "ABBANK"
     },
     {
         "id": "6",
-        "fullname_vn": "Bắc Á",
-        "fullname_en": "NASBank",
-        "shortname": "NASB",
+        "fullname_vn": "Ngân hàng TMCP Bắc Á",
+        "fullname_en": "Bac A Commercial Joint Stock Bank",
+        "shortname": "BacABank",
         "website": "https://www.baca-bank.vn/SitePages/trang-chu.aspx",
-        "thumbnail": "bac_a_bank"
+        "thumbnail": "BACA"
     },
     {
         "id": "7",
-        "fullname_vn": "Dầu khí Toàn Cầu",
-        "fullname_en": "GP.Bank",
-        "shortname": "GP.Bank",
-        "website": "https://www.gpbank.com.vn/",
-        "thumbnail": "gp_bank"
+        "fullname_vn": "Ngân hàng TMCP Xăng Dầu Petrolimex",
+        "fullname_en": "Petrolimex Group Commercial Joint Stock Bank",
+        "shortname": "PG Bank",
+        "website": "https://www.pgbank.com.vn/",
+        "thumbnail": "PGBANK"
     },
     {
         "id": "8",
-        "fullname_vn": "Bản Việt",
-        "fullname_en": "VIET CAPITAL BANK",
-        "shortname": "VCCB",
+        "fullname_vn": "Ngân hàng TMCP Bản Việt",
+        "fullname_en": "Viet Capital Commercial Joint Stock Bank",
+        "shortname": "Viet Capital Bank",
         "website": "https://www.vietcapitalbank.com.vn/web/guest/trang-chu",
-        "thumbnail": "viet_capital_bank"
+        "thumbnail": "BANVIET"
     },
     {
         "id": "9",
-        "fullname_vn": "Hàng Hải Việt Nam",
-        "fullname_en": "Maritime Bank",
-        "shortname": "MSB",
+        "fullname_vn": "Ngân hàng TMCP Hàng Hải Việt Nam",
+        "fullname_en": "Vietnam Maritime Commercial Joint Stock Bank",
+        "shortname": "Maritime Bank",
         "website": "https://www.msb.com.vn/",
-        "thumbnail": "maritime_bank"
+        "thumbnail": "MARITIME"
     },
     {
         "id": "10",
-        "fullname_vn": "Kỹ Thương Việt Nam",
-        "fullname_en": "Techcombank",
+        "fullname_vn": "Ngân hàng TMCP Kỹ thương Việt Nam",
+        "fullname_en": "Vietnam Technological and Commercial Joint Stock Bank",
         "shortname": "Techcombank",
         "website": "https://www.techcombank.com.vn/trang-chu",
-        "thumbnail": "techcom_bank"
+        "thumbnail": "TECH"
+    },
+    {
+        "id": "11",
+        "fullname_vn": "Ngân hàng TMCP Kiên Long",
+        "fullname_en": "Kien Long Commercial Joint Stock Bank",
+        "shortname": "KienLongBank",
+        "website": "https://kienlongbank.com/",
+        "thumbnail": "KIENLONG"
+    },
+    {
+        "id": "12",
+        "fullname_vn": "Ngân hàng TMCP Nam Á",
+        "fullname_en": "Nam A Commercial Joint Stock Bank",
+        "shortname": "Nam A Bank",
+        "website": "http://www.namabank.com.vn/",
+        "thumbnail": "NAM_A"
+    },
+    {
+        "id": "13",
+        "fullname_vn": "Ngân hàng TMCP Quốc Dân",
+        "fullname_en": "National Citizen Bank",
+        "shortname": "NCB",
+        "website": "https://www.ncb-bank.vn/",
+        "thumbnail": "NCB"
+    },
+    {
+        "id": "14",
+        "fullname_vn": "Ngân hàng TMCP Việt Nam Thịnh Vượng",
+        "fullname_en": "Vietnam Prosperity Joint Stock Commercial Bank",
+        "shortname": "VPBank",
+        "website": "http://www.vpbank.com.vn/",
+        "thumbnail": "VPBANK"
+    },
+    {
+        "id": "15",
+        "fullname_vn": "Ngân hàng TMCP Sài Gòn- Hà Nội",
+        "fullname_en": "Saigon – Hanoi Commercial Joint Stock Bank",
+        "shortname": "SHB",
+        "website": "http://www.shb.com.vn/",
+        "thumbnail": "SHB"
+    },
+    {
+        "id": "16",
+        "fullname_vn": "Ngân hàng TMCP Phát triển nhà TP. Hồ Chí Minh",
+        "fullname_en": "Ho Chi Minh City Development Joint Stock Commercial Bank",
+        "shortname": "HDBank",
+        "website": "https://www.hdbank.com.vn/",
+        "thumbnail": "HDBANK"
+    },
+    {
+        "id": "18",
+        "fullname_vn": "Ngân hàng TMCP Phương Đông",
+        "fullname_en": "Orient Commercial Joint Stock Bank",
+        "shortname": "OCB",
+        "website": "https://www.ocb.com.vn/",
+        "thumbnail": "OCB"
+    },
+    {
+        "id": "19",
+        "fullname_vn": "Ngân hàng TMCP Quân đội",
+        "fullname_en": "Military Commercial Joint Stock Bank",
+        "shortname": "MBBank",
+        "website": "https://mbbank.com.vn/eng/Pages/default.aspx",
+        "thumbnail": "MB"
+    },
+    {
+        "id": "20",
+        "fullname_vn": "Ngân hàng TMCP Đại Chúng Việt Nam",
+        "fullname_en": "Vietnam Public Joint Stock Commercial Bank",
+        "shortname": "PVcombank",
+        "website": "http://pvcombank.com.vn/",
+        "thumbnail": "PVCOM"
+    },
+    {
+        "id": "21",
+        "fullname_vn": "Ngân hàng TMCP Quốc tế",
+        "fullname_en": "Vietnam International Commercial Joint Stock Bank",
+        "shortname": "VIB Bank",
+        "website": "https://vib.com.vn/wps/portal/vn/ca-nhan",
+        "thumbnail": "VIB"
+    },
+    {
+        "id": "22",
+        "fullname_vn": "Ngân hàng TMCP Sài Gòn",
+        "fullname_en": "Sai Gon Commercial Joint Stock Bank",
+        "shortname": "SCB",
+        "website": "https://scb.com.vn/",
+        "thumbnail": "SCB"
+    },
+    {
+        "id": "23",
+        "fullname_vn": "Ngân hàng TMCP Sài Gòn Công thương",
+        "fullname_en": "Saigon Bank for Industry and Trade",
+        "shortname": "Saigonbank",
+        "website": "https://saigonbank.com.vn/",
+        "thumbnail": "SAIGON"
+    },
+    {
+        "id": "24",
+        "fullname_vn": "Ngân hàng TMCP Sài Gòn Thương Tín",
+        "fullname_en": "Sai Gon Thuong Tin Commercial Joint Stock Bank",
+        "shortname": "Sacombank",
+        "website": "https://www.sacombank.com.vn/Pages/default.aspx",
+        "thumbnail": "SACOMBANK"
+    },
+    {
+        "id": "25",
+        "fullname_vn": "Ngân hàng TMCP Việt Á",
+        "fullname_en": "Viet A Commercial Joint Stock Bank",
+        "shortname": "Viet A Bank",
+        "website": "https://vietabank.com.vn/",
+        "thumbnail": "VIETA"
+    },
+    {
+        "id": "26",
+        "fullname_vn": "Ngân hàng TMCP Bảo Việt",
+        "fullname_en": "Bao Viet Joint Stock Commercial Bank",
+        "shortname": "Bao Viet Bank",
+        "website": "https://baovietbank.vn/",
+        "thumbnail": "BAOVIET"
+    },
+    {
+        "id": "27",
+        "fullname_vn": "Ngân hàng TMCP Việt Nam Thương Tín",
+        "fullname_en": "Vietnam Thuong Tin Commercial Joint Stock Bank",
+        "shortname": "VietBank",
+        "website": "http://vietbank.com.vn/",
+        "thumbnail": "VIETBANK"
+    },
+    {
+        "id": "29",
+        "fullname_vn": "Ngân hàng TMCP Xuất nhập khẩu",
+        "fullname_en": "Vietnam Export Import Commercial Joint Stock Bank",
+        "shortname": "Eximbank",
+        "website": "http://eximbank.com.vn/home/",
+        "thumbnail": "EXIM"
+    },
+    {
+        "id": "30",
+        "fullname_vn": "Ngân hàng TMCP Bưu điện Liên Việt",
+        "fullname_en": "Lien Viet Post Joint Stock Commercial Bank",
+        "shortname": "LienVietPostBank",
+        "website": "http://www.lienvietpostbank.com.vn/",
+        "thumbnail": "LIENVIET"
+    },
+    {
+        "id": "31",
+        "fullname_vn": "Ngân hàng TMCP Tiên Phong",
+        "fullname_en": "Tien Phong Commercial Joint Stock Bank",
+        "shortname": "TPBank",
+        "website": "https://tpb.vn/",
+        "thumbnail": "TPBANK"
+    },
+    {
+        "id": "32",
+        "fullname_vn": "Ngân hàng TMCP Ngoại thương Việt Nam",
+        "fullname_en": "Joint Stock Commercial Bank for Foreign Trade of Vietnam",
+        "shortname": "Vietcombank",
+        "website": "http://www.vietcombank.com.vn/",
+        "thumbnail": "VIETCOMBANK"
+    },
+    {
+        "id": "34",
+        "fullname_vn": "Ngân hàng Xây dựng",
+        "fullname_en": "Construction Bank",
+        "shortname": "CB",
+        "website": "https://www.cbbank.vn/",
+        "thumbnail": "CB"
+    },
+    {
+        "id": "35",
+        "fullname_vn": "Ngân hàng TMCP Công thương Việt Nam",
+        "fullname_en": "Vietnam Joint Stock Commercial Bank for Industry and Trade",
+        "shortname": "Vietinbank",
+        "website": "http://www.vietinbank.vn/web/home/vn/index.html",
+        "thumbnail": "VIETIN"
+    },
+    {
+        "id": "36",
+        "fullname_vn": "Ngân hàng Đầu tư và Phát triển Việt Nam",
+        "fullname_en": "Joint Stock Commercial Bank for Investment and Development of Vietnam",
+        "shortname": "BIDV",
+        "website": "http://bidv.com.vn/",
+        "thumbnail": "BIDV"
+    },
+    {
+        "id": "37",
+        "fullname_vn": "Ngân hàng Chính sách Xã hội Việt Nam",
+        "fullname_en": "Vietnam Bank for Social Policies",
+        "shortname": "NHCSXH/VBSP",
+        "website": "http://www.vbsp.org.vn/",
+        "thumbnail": "VBSP"
+    },
+    {
+        "id": "38",
+        "fullname_vn": "Ngân hàng Phát triển Việt Nam",
+        "fullname_en": "Vietnam Development Bank",
+        "shortname": "VDB",
+        "website": "http://www.vdb.gov.vn/",
+        "thumbnail": "VDB"
+    },
+    {
+        "id": "39",
+        "fullname_vn": "Ngân hàng Dầu Khí Toàn Cầu",
+        "fullname_en": "Global Petro Bank",
+        "shortname": "GPBank",
+        "website": "https://www.gpbank.com.vn/",
+        "thumbnail": "GP"
+    },
+    {
+        "id": "40",
+        "fullname_vn": "Ngân hàng Nông nghiệp và Phát triển Nông thôn VN",
+        "fullname_en": "Vietnam Bank for Agriculture and Rural Development",
+        "shortname": "Agribank",
+        "website": "http://www.agribank.com.vn/",
+        "thumbnail": "AGRIBANK"
     }
 ]

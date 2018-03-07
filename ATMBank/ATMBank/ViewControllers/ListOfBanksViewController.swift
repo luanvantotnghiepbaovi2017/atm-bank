@@ -32,6 +32,7 @@ class ListOfBanksViewController: UIViewController {
         registerCell()
         configureCollectionViewLayout()
         bindViewModel()
+        modelSelected()
     }
     
     private func bindViewModel() {
@@ -42,6 +43,19 @@ class ListOfBanksViewController: UIViewController {
             .bind(to: collectionViewListOfBanks.rx.items(cellIdentifier: ListOfBanksCell.nibName, cellType: ListOfBanksCell.self)) { (item, element, cell) in
                 cell.bank = element
             }
+            .disposed(by: disposeBag)
+    }
+    
+    private func modelSelected() {
+        collectionViewListOfBanks
+            .rx
+            .modelSelected(Bank.self)
+            .subscribe(onNext: { [weak self] (bank) in
+                guard let strongSelf = self else { return }
+                let storyboard = UIStoryboard.storyboard(storyboard: .main)
+                let bankOptionVC: BankOptionViewController = storyboard.instantiateViewController()
+                strongSelf.present(bankOptionVC, animated: true, completion: nil)
+            })
             .disposed(by: disposeBag)
     }
     

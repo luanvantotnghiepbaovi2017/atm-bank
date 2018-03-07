@@ -7,6 +7,7 @@
 //
 
 class Bank: Decodable {
+    // MARK: Properties
     var id: String = ""
     var fullnameVN: String = ""
     var fullnameVNForSearch: String = ""
