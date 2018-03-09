@@ -5,6 +5,8 @@
         "fullname_en": "Asia Commercial Joint Stock Bank",
         "shortname": "ACB",
         "website": "http://acb.com.vn/",
+        "tel":"(028) 38 247 247",
+        "hotline":"1900 54 54 86",
         "thumbnail": "ACB"
     },
     {
@@ -13,6 +15,8 @@
         "fullname_en": "DongA Commercial Joint Stock Bank",
         "shortname": "DongA Bank",
         "website": "http://dongabank.com.vn/",
+        "tel":"(028) 3995 1483",
+        "hotline":"1900 545 464",
         "thumbnail": "DONGA"
     },
     {
@@ -21,6 +25,8 @@
         "fullname_en": "Southeast Asia Joint Stock Commercial Bank",
         "shortname": "SeABank",
         "website": "https://seabank.com.vn/",
+        "tel":"(024) 3944 8688",
+        "hotline":"1800 555 587",
         "thumbnail": "SEA"
     },
     {
@@ -29,6 +35,8 @@
         "fullname_en": "Ocean Commercial One Member Limited Liability Bank",
         "shortname": "Oceanbank",
         "website": "http://oceanbank.vn/",
+        "tel":"(024) 3772 6789",
+        "hotline":"1800 58 88 15",
         "thumbnail": "OCEAN"
     },
     {
@@ -37,6 +45,8 @@
         "fullname_en": "An Binh Commercial Joint Stock Bank",
         "shortname": "ABBank",
         "website": "https://abbank.vn/",
+        "tel":"(028) 3836 5365",
+        "hotline":"1800 1159",
         "thumbnail": "ABBANK"
     },
     {
@@ -45,6 +55,8 @@
         "fullname_en": "Bac A Commercial Joint Stock Bank",
         "shortname": "BacABank",
         "website": "https://www.baca-bank.vn/SitePages/trang-chu.aspx",
+        "tel":"",
+        "hotline":"1800 588 828",
         "thumbnail": "BACA"
     },
     {
@@ -53,6 +65,8 @@
         "fullname_en": "Petrolimex Group Commercial Joint Stock Bank",
         "shortname": "PG Bank",
         "website": "https://www.pgbank.com.vn/",
+        "tel":"(024) 62 555 999",
+        "hotline":"1900 555 574",
         "thumbnail": "PGBANK"
     },
     {
@@ -61,6 +75,8 @@
         "fullname_en": "Viet Capital Commercial Joint Stock Bank",
         "shortname": "Viet Capital Bank",
         "website": "https://www.vietcapitalbank.com.vn/web/guest/trang-chu",
+        "tel":"",
+        "hotline":"1900 555 596",
         "thumbnail": "BANVIET"
     },
     {
@@ -69,6 +85,8 @@
         "fullname_en": "Vietnam Maritime Commercial Joint Stock Bank",
         "shortname": "Maritime Bank",
         "website": "https://www.msb.com.vn/",
+        "tel":"(024) 39 44 55 66",
+        "hotline":"1800 59 9999",
         "thumbnail": "MARITIME"
     },
     {
@@ -77,6 +95,8 @@
         "fullname_en": "Vietnam Technological and Commercial Joint Stock Bank",
         "shortname": "Techcombank",
         "website": "https://www.techcombank.com.vn/trang-chu",
+        "tel":"(024) 3944 8858",
+        "hotline":"1800 588 822",
         "thumbnail": "TECH"
     },
     {
@@ -85,6 +105,8 @@
         "fullname_en": "Kien Long Commercial Joint Stock Bank",
         "shortname": "KienLongBank",
         "website": "https://kienlongbank.com/",
+        "tel":"(028) 7309 6929",
+        "hotline":"1900 6929",
         "thumbnail": "KIENLONG"
     },
     {
@@ -93,6 +115,8 @@
         "fullname_en": "Nam A Commercial Joint Stock Bank",
         "shortname": "Nam A Bank",
         "website": "http://www.namabank.com.vn/",
+        "tel":"(024) 3929 6699",
+        "hotline":"1900 6679", 
         "thumbnail": "NAM_A"
     },
     {
@@ -101,6 +125,8 @@
         "fullname_en": "National Citizen Bank",
         "shortname": "NCB",
         "website": "https://www.ncb-bank.vn/",
+        "tel":"(024) 6269 3355",
+        "hotline":"(028) 38 216 216",
         "thumbnail": "NCB"
     },
     {
@@ -109,6 +135,8 @@
         "fullname_en": "Vietnam Prosperity Joint Stock Commercial Bank",
         "shortname": "VPBank",
         "website": "http://www.vpbank.com.vn/",
+        "tel":"(024) 39 288 880",
+        "hotline":"1900 545 415",
         "thumbnail": "VPBANK"
     },
     {
@@ -117,6 +145,8 @@
         "fullname_en": "Saigon – Hanoi Commercial Joint Stock Bank",
         "shortname": "SHB",
         "website": "http://www.shb.com.vn/",
+        "tel":"(024) 3942 3388",
+        "hotline":"1800 588 856",
         "thumbnail": "SHB"
     },
     {
@@ -125,6 +155,8 @@
         "fullname_en": "Ho Chi Minh City Development Joint Stock Commercial Bank",
         "shortname": "HDBank",
         "website": "https://www.hdbank.com.vn/",
+        "tel":"(028) 62 915 916",
+        "hotline":"1800 68 68",
         "thumbnail": "HDBANK"
     },
     {
@@ -133,6 +165,8 @@
         "fullname_en": "Orient Commercial Joint Stock Bank",
         "shortname": "OCB",
         "website": "https://www.ocb.com.vn/",
+        "tel":"(028) 38 220 960",
+        "hotline":"1800 6678",
         "thumbnail": "OCB"
     },
     {
@@ -141,6 +175,8 @@
         "fullname_en": "Military Commercial Joint Stock Bank",
         "shortname": "MBBank",
         "website": "https://mbbank.com.vn/eng/Pages/default.aspx",
+        "tel":"(024) 3767 4050",
+        "hotline":"1900 5454 26",
         "thumbnail": "MB"
     },
     {
@@ -149,6 +185,8 @@
         "fullname_en": "Vietnam Public Joint Stock Commercial Bank",
         "shortname": "PVcombank",
         "website": "http://pvcombank.com.vn/",
+        "tel":"(024) 3942 6800",
+        "hotline":"1900 5555 92",
         "thumbnail": "PVCOM"
     },
     {
@@ -157,6 +195,8 @@
         "fullname_en": "Vietnam International Commercial Joint Stock Bank",
         "shortname": "VIB Bank",
         "website": "https://vib.com.vn/wps/portal/vn/ca-nhan",
+        "tel":"(024) 6276 0068",
+        "hotline":"1800 8180",
         "thumbnail": "VIB"
     },
     {
@@ -165,6 +205,8 @@
         "fullname_en": "Sai Gon Commercial Joint Stock Bank",
         "shortname": "SCB",
         "website": "https://scb.com.vn/",
+        "tel":"(028) 39 230 666",
+        "hotline":"1900 6538",
         "thumbnail": "SCB"
     },
     {
@@ -173,6 +215,8 @@
         "fullname_en": "Saigon Bank for Industry and Trade",
         "shortname": "Saigonbank",
         "website": "https://saigonbank.com.vn/",
+        "tel":"",
+        "hotline":"1900 5555 11",
         "thumbnail": "SAIGON"
     },
     {
@@ -181,6 +225,8 @@
         "fullname_en": "Sai Gon Thuong Tin Commercial Joint Stock Bank",
         "shortname": "Sacombank",
         "website": "https://www.sacombank.com.vn/Pages/default.aspx",
+        "tel":"(024) 83 526 6060",
+        "hotline":"1900 5555 88",
         "thumbnail": "SACOMBANK"
     },
     {
@@ -189,6 +235,8 @@
         "fullname_en": "Viet A Commercial Joint Stock Bank",
         "shortname": "Viet A Bank",
         "website": "https://vietabank.com.vn/",
+        "tel":"(028) 38 211 456",
+        "hotline":"1900 555 590",
         "thumbnail": "VIETA"
     },
     {
@@ -197,6 +245,8 @@
         "fullname_en": "Bao Viet Joint Stock Commercial Bank",
         "shortname": "Bao Viet Bank",
         "website": "https://baovietbank.vn/",
+        "tel":"(024)39 38 19 19",
+        "hotline":"1900 55 88 48",
         "thumbnail": "BAOVIET"
     },
     {
@@ -205,6 +255,8 @@
         "fullname_en": "Vietnam Thuong Tin Commercial Joint Stock Bank",
         "shortname": "VietBank",
         "website": "http://vietbank.com.vn/",
+        "tel":"",
+        "hotline":"1800 1122",
         "thumbnail": "VIETBANK"
     },
     {
@@ -213,6 +265,8 @@
         "fullname_en": "Vietnam Export Import Commercial Joint Stock Bank",
         "shortname": "Eximbank",
         "website": "http://eximbank.com.vn/home/",
+        "tel":"(028) 3821 0056",
+        "hotline":"1800 1199",
         "thumbnail": "EXIM"
     },
     {
@@ -221,6 +275,8 @@
         "fullname_en": "Lien Viet Post Joint Stock Commercial Bank",
         "shortname": "LienVietPostBank",
         "website": "http://www.lienvietpostbank.com.vn/",
+        "tel":"",
+        "hotline":"1800 577 758",
         "thumbnail": "LIENVIET"
     },
     {
@@ -229,6 +285,8 @@
         "fullname_en": "Tien Phong Commercial Joint Stock Bank",
         "shortname": "TPBank",
         "website": "https://tpb.vn/",
+        "tel":"(024) 37 683 683",
+        "hotline":"1900 58 58 85",
         "thumbnail": "TPBANK"
     },
     {
@@ -237,6 +295,8 @@
         "fullname_en": "Joint Stock Commercial Bank for Foreign Trade of Vietnam",
         "shortname": "Vietcombank",
         "website": "http://www.vietcombank.com.vn/",
+        "tel":"(024) 3824 3524",
+        "hotline":"1900 54 54 13",        
         "thumbnail": "VIETCOMBANK"
     },
     {
@@ -245,6 +305,8 @@
         "fullname_en": "Construction Bank",
         "shortname": "CB",
         "website": "https://www.cbbank.vn/",
+        "tel":"",
+        "hotline":"1900 1816",
         "thumbnail": "CB"
     },
     {
@@ -253,6 +315,8 @@
         "fullname_en": "Vietnam Joint Stock Commercial Bank for Industry and Trade",
         "shortname": "Vietinbank",
         "website": "http://www.vietinbank.vn/web/home/vn/index.html",
+        "tel":"(024) 3941 8868",
+        "hotline":"1900 55 88 68",
         "thumbnail": "VIETIN"
     },
     {
@@ -261,6 +325,8 @@
         "fullname_en": "Joint Stock Commercial Bank for Investment and Development of Vietnam",
         "shortname": "BIDV",
         "website": "http://bidv.com.vn/",
+        "tel":"(024) 222 00588",
+        "hotline":"1900 9247",
         "thumbnail": "BIDV"
     },
     {
@@ -269,6 +335,8 @@
         "fullname_en": "Vietnam Bank for Social Policies",
         "shortname": "NHCSXH/VBSP",
         "website": "http://www.vbsp.org.vn/",
+        "tel":"(024) 3641 7184",
+        "hotline":"",
         "thumbnail": "VBSP"
     },
     {
@@ -277,6 +345,8 @@
         "fullname_en": "Vietnam Development Bank",
         "shortname": "VDB",
         "website": "http://www.vdb.gov.vn/",
+        "tel":"(024) 3736 5659",
+        "hotline":"",
         "thumbnail": "VDB"
     },
     {
@@ -285,6 +355,8 @@
         "fullname_en": "Global Petro Bank",
         "shortname": "GPBank",
         "website": "https://www.gpbank.com.vn/",
+        "tel":"(024) 37 345 345",
+        "hotline":"1800 58 58 66",
         "thumbnail": "GP"
     },
     {
@@ -293,6 +365,8 @@
         "fullname_en": "Vietnam Bank for Agriculture and Rural Development",
         "shortname": "Agribank",
         "website": "http://www.agribank.com.vn/",
+        "tel":"(024) 3868 7437",
+        "hotline":"(024) 3868 7913",
         "thumbnail": "AGRIBANK"
     }
 ]

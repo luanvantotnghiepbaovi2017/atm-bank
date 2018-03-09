@@ -42,6 +42,21 @@ class ListOfBanksViewController: UIViewController {
             .debug()
             .bind(to: collectionViewListOfBanks.rx.items(cellIdentifier: ListOfBanksCell.nibName, cellType: ListOfBanksCell.self)) { (item, element, cell) in
                 cell.bank = element
+                cell.buttonMainOption
+                    .rx
+                    .tap
+                    .subscribe { [weak self] _ in
+                        guard let strongSelf = self else { return }
+                        let storyboard = UIStoryboard.storyboard(storyboard: .main)
+                        let bankOptionVC: BankOptionViewController = storyboard.instantiateViewController()
+                        let optionWebsite = BankOption(id: "1", title: "Trang chủ", type: .website)
+                        let optionPhone = BankOption(id: "2", title: "Điện thoại", type: .phone)
+                        let optionDirection = BankOption(id: "3", title: "Chỉ đường", type: .direction)
+                        let options = [optionWebsite, optionPhone, optionDirection]
+                        bankOptionVC.viewModel = BankOptionViewModel(options: options)
+                        strongSelf.present(bankOptionVC, animated: true, completion: nil)
+                    }
+                    .disposed(by: cell.disposeBag)
             }
             .disposed(by: disposeBag)
     }
@@ -54,6 +69,10 @@ class ListOfBanksViewController: UIViewController {
                 guard let strongSelf = self else { return }
                 let storyboard = UIStoryboard.storyboard(storyboard: .main)
                 let bankOptionVC: BankOptionViewController = storyboard.instantiateViewController()
+                let optionBranch = BankOption(id: "1", title: "Chi nhánh", type: .branch)
+                let optionATM = BankOption(id: "2", title: "ATM", type: .atm)
+                let options = [optionBranch, optionATM]
+                bankOptionVC.viewModel = BankOptionViewModel(options: options)
                 strongSelf.present(bankOptionVC, animated: true, completion: nil)
             })
             .disposed(by: disposeBag)

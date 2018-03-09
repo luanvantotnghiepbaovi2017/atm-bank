@@ -55,7 +55,9 @@
                                                     <constraint firstAttribute="height" constant="40" id="abB-kR-OtM"/>
                                                     <constraint firstAttribute="width" constant="40" id="c8M-Xy-2b5"/>
                                                 </constraints>
-                                                <state key="normal" image="search"/>
+                                                <state key="normal" image="search">
+                                                    <color key="titleColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -120,10 +122,10 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <subviews>
                                     <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rCg-IS-C2i">
-                                        <rect key="frame" x="25" y="165" width="270" height="239"/>
+                                        <rect key="frame" x="25" y="194.5" width="270" height="180"/>
                                         <subviews>
                                             <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" bouncesZoom="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="MTY-sx-Bau">
-                                                <rect key="frame" x="0.0" y="0.0" width="270" height="239"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="270" height="180"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <prototypes>
                                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="BankOptionCell" id="NxL-8V-W2h" customClass="BankOptionCell" customModule="ATMBank" customModuleProvider="target">
@@ -168,7 +170,7 @@
                                         <constraints>
                                             <constraint firstAttribute="width" constant="270" id="IEq-ef-eFV"/>
                                             <constraint firstItem="MTY-sx-Bau" firstAttribute="top" secondItem="rCg-IS-C2i" secondAttribute="top" id="O0b-NA-xCP"/>
-                                            <constraint firstAttribute="height" constant="239" id="QdC-Ny-Fgj"/>
+                                            <constraint firstAttribute="height" constant="180" id="QdC-Ny-Fgj"/>
                                             <constraint firstAttribute="trailing" secondItem="MTY-sx-Bau" secondAttribute="trailing" id="nkq-PK-NVO"/>
                                             <constraint firstItem="MTY-sx-Bau" firstAttribute="leading" secondItem="rCg-IS-C2i" secondAttribute="leading" id="qoe-VC-dMw"/>
                                             <constraint firstAttribute="bottom" secondItem="MTY-sx-Bau" secondAttribute="bottom" id="uez-r7-88E"/>
@@ -180,7 +182,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Cx-Vi-TLp">
-                                        <rect key="frame" x="25" y="145" width="290" height="40"/>
+                                        <rect key="frame" x="25" y="174.5" width="290" height="40"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XEe-l7-8ZP">
                                                 <rect key="frame" x="250" y="0.0" width="40" height="40"/>
@@ -228,6 +230,7 @@
                         <viewLayoutGuide key="safeArea" id="frl-GP-lCo"/>
                     </view>
                     <connections>
+                        <outlet property="heightConstraintContainerView" destination="QdC-Ny-Fgj" id="v0a-VQ-nQS"/>
                         <outlet property="tableViewBankOption" destination="MTY-sx-Bau" id="MX5-CQ-hwo"/>
                     </connections>
                 </viewController>

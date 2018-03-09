@@ -14,6 +14,7 @@ class BankOptionViewController: UIViewController {
 
     // MARK: IBOutlets
     @IBOutlet weak var tableViewBankOption: UITableView!
+    @IBOutlet weak var heightConstraintContainerView: NSLayoutConstraint!
     
     // MARK: IBActions
     
@@ -22,13 +23,18 @@ class BankOptionViewController: UIViewController {
     }
     
     // MARK: Properties
-    private var viewModel: BankOptionViewModelType!
+    var viewModel: BankOptionViewModelType!
     private let disposeBag: DisposeBag = DisposeBag()
+    private let optionItemHeight: CGFloat = 90.0
     
     // MARK: Methods
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        heightConstraintContainerView.constant = optionItemHeight * CGFloat(viewModel.getOptionCount()) - 1
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        viewModel = BankOptionViewModel()
         bindViewModel()
         setUpTableView()
     }
@@ -77,6 +83,6 @@ extension BankOptionViewController: UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 80.0
+        return optionItemHeight
     }
 }

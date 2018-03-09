@@ -31,7 +31,7 @@ class Bank: Decodable {
     required init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         id = try container.decode(String.self, forKey: .id)
-        fullnameVN = "Ngân hàng \(try container.decode(String.self, forKey: .fullnameVN))"
+        fullnameVN = "\(try container.decode(String.self, forKey: .fullnameVN))"
         if fullnameVN.uppercased().contains(find: "Đ") {
             fullnameVNForSearch = fullnameVN.removingWhitespaces().uppercased().replacingOccurrences(of: "Đ", with: "D") .removeDiacritic()
         } else {

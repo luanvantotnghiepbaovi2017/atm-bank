@@ -12,21 +12,19 @@ import RxSwift
 protocol BankOptionViewModelType: class {
     func getBankOptions() -> Variable<[BankOption]>
     func getBankOption(at indexPath: IndexPath) -> BankOption
+    func getOptionCount() -> Int
 }
 
 class BankOptionViewModel: BankOptionViewModelType {
     // MARK: Properties
     private var bankOptionList = Variable<[BankOption]>([])
     
-    init() {
-        initialBankOptionData()
+    init(options: [BankOption]) {
+        bankOptionList.value = options
     }
     
-    private func initialBankOptionData() {
-        let optionBank = BankOption(id: "1", title: "Ngân hàng")
-        let optionATM = BankOption(id: "2", title: "ATM")
-        let optionWebsite = BankOption(id: "3", title: "Trang chủ")
-        bankOptionList.value = [optionBank, optionATM, optionWebsite]
+    func getOptionCount() -> Int {
+        return bankOptionList.value.count
     }
     
     func getBankOptions() -> Variable<[BankOption]> {

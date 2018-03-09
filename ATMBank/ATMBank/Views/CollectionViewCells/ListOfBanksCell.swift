@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import RxSwift
 
 class ListOfBanksCell: UICollectionViewCell {
 
@@ -14,8 +15,10 @@ class ListOfBanksCell: UICollectionViewCell {
     @IBOutlet weak var imageViewBank: UIImageView!
     @IBOutlet weak var labelBankFullName: UILabel!
     @IBOutlet weak var labelBankShortName: UILabel!
+    @IBOutlet weak var buttonMainOption: UIButton!
     
     // MARK: Properties
+    var disposeBag: DisposeBag = DisposeBag()
     var bank: Bank! {
         didSet {
             configureCell()
@@ -27,12 +30,17 @@ class ListOfBanksCell: UICollectionViewCell {
         super.awakeFromNib()
         setupShadow()
     }
+    
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        disposeBag = DisposeBag()
+    }
 
     private func configureCell() {
         if currentLanguage == LanguageCode.vn {
             labelBankFullName.text = "\(bank.fullnameVN)"
         } else {
-            labelBankFullName.text = "\(bank.fullNameENForSearch)"
+            labelBankFullName.text = "\(bank.fullnameEN)"
         }
         labelBankShortName.text = bank.shortname
         imageViewBank.image = UIImage(named: bank.thumbnail)
