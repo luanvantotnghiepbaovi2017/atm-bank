@@ -54,6 +54,7 @@ class ListOfBanksViewController: UIViewController {
                         let optionDirection = BankOption(id: "3", title: "Chỉ đường", type: .direction)
                         let options = [optionWebsite, optionPhone, optionDirection]
                         bankOptionVC.viewModel = BankOptionViewModel(options: options)
+                        bankOptionVC.selectedBank = element
                         strongSelf.present(bankOptionVC, animated: true, completion: nil)
                     }
                     .disposed(by: cell.disposeBag)
@@ -73,6 +74,7 @@ class ListOfBanksViewController: UIViewController {
                 let optionATM = BankOption(id: "2", title: "ATM", type: .atm)
                 let options = [optionBranch, optionATM]
                 bankOptionVC.viewModel = BankOptionViewModel(options: options)
+                bankOptionVC.selectedBank = bank
                 strongSelf.present(bankOptionVC, animated: true, completion: nil)
             })
             .disposed(by: disposeBag)

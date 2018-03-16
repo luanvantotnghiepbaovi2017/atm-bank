@@ -7,9 +7,19 @@
 //
 
 import Foundation
+import RSLoadingView
 
 class Helper {
+    // MARK: Properties
+    static var loadingView: RSLoadingView!
     class func isEmptyData(data: String) -> Bool {
         return data.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines).isEmpty
+    }
+    class func showLoadingView(effect: RSLoadingView.Effect, containerView: UIView) {
+        loadingView = RSLoadingView(effectType: effect)
+        loadingView.show(on: containerView)
+    }
+    class func hideLoadingView() {
+        loadingView.hide()
     }
 }

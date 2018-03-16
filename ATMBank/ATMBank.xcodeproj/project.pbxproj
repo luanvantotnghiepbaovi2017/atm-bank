@@ -10,6 +10,7 @@
 		1C9ECF80C5959EE05A352ADB /* Pods_ATMBankTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D681F1709A34462519AE1C1 /* Pods_ATMBankTests.framework */; };
 		391D181920482CBB0090C862 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391D181820482CBB0090C862 /* Helper.swift */; };
 		392A43042050457A0011B0C8 /* ListOfBanksInVN.json in Resources */ = {isa = PBXBuildFile; fileRef = 392A43032050457A0011B0C8 /* ListOfBanksInVN.json */; };
+		3930E858205585F5000D67CA /* WebsiteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3930E857205585F5000D67CA /* WebsiteViewController.swift */; };
 		397A7247204316DF0035C004 /* UIStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397A7246204316DF0035C004 /* UIStoryboard.swift */; };
 		397A7249204317160035C004 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397A7248204317160035C004 /* String.swift */; };
 		397A724C204317770035C004 /* LocalizeHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397A724B204317770035C004 /* LocalizeHelper.swift */; };
@@ -70,6 +71,7 @@
 		2D681F1709A34462519AE1C1 /* Pods_ATMBankTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ATMBankTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		391D181820482CBB0090C862 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		392A43032050457A0011B0C8 /* ListOfBanksInVN.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ListOfBanksInVN.json; sourceTree = "<group>"; };
+		3930E857205585F5000D67CA /* WebsiteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebsiteViewController.swift; sourceTree = "<group>"; };
 		397A7246204316DF0035C004 /* UIStoryboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIStoryboard.swift; sourceTree = "<group>"; };
 		397A7248204317160035C004 /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		397A724B204317770035C004 /* LocalizeHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalizeHelper.swift; sourceTree = "<group>"; };
@@ -258,6 +260,7 @@
 				39E6166C2043108000B8B742 /* ListOfBanksViewController.swift */,
 				39E6166E2043108900B8B742 /* HistoryViewController.swift */,
 				39AF4B1D204D74F900928FA4 /* BankOptionViewController.swift */,
+				3930E857205585F5000D67CA /* WebsiteViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -603,6 +606,7 @@
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/RSLoadingView/RSLoadingView.framework",
 				"${BUILT_PRODUCTS_DIR}/ReachabilitySwift/Reachability.framework",
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
@@ -616,6 +620,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RSLoadingView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reachability.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
@@ -714,6 +719,7 @@
 				39AF4B1E204D74F900928FA4 /* BankOptionViewController.swift in Sources */,
 				39E6166320430B8200B8B742 /* Constant.swift in Sources */,
 				39E6166D2043108000B8B742 /* ListOfBanksViewController.swift in Sources */,
+				3930E858205585F5000D67CA /* WebsiteViewController.swift in Sources */,
 				397A7256204334440035C004 /* ListOfBanksCell.swift in Sources */,
 				39E359CA2042E5C5002CF86E /* AppDelegate.swift in Sources */,
 				397A7249204317160035C004 /* String.swift in Sources */,

@@ -17,6 +17,8 @@ class Bank: Decodable {
     var shortnameForSearch: String = ""
     var website: String = ""
     var thumbnail: String = ""
+    var telephone: String = ""
+    var hotline: String = ""
     
     enum CodingKeys: String, CodingKey {
         case id = "id"
@@ -25,6 +27,8 @@ class Bank: Decodable {
         case shortname = "shortname"
         case website = "website"
         case thumbnail = "thumbnail"
+        case telephone = "tel"
+        case hotline = "hotline"
     }
     
     // MARK: Methods
@@ -43,13 +47,15 @@ class Bank: Decodable {
         shortnameForSearch = shortname.removingWhitespaces().uppercased()
         website = try container.decode(String.self, forKey: .website)
         thumbnail = try container.decode(String.self, forKey: .thumbnail)
+        telephone = try container.decode(String.self, forKey: .telephone)
+        telephone = try container.decode(String.self, forKey: .telephone)
     }
     
     // Constructor default
     init() {}
     
     // Constructor parameter
-    init(id: String, fullnameVN: String, fullnameVNForSearch: String, fullnameEN: String, shortname: String, website: String, thumbnail: String) {
+    init(id: String, fullnameVN: String, fullnameVNForSearch: String, fullnameEN: String, shortname: String, website: String, thumbnail: String, telephone: String, hotline: String) {
         self.id = id
         self.fullnameVN = fullnameVN
         self.fullnameVNForSearch = fullnameVNForSearch
@@ -57,6 +63,8 @@ class Bank: Decodable {
         self.shortname = shortname
         self.website = website
         self.thumbnail = thumbnail
+        self.telephone = telephone
+        self.hotline = hotline
     }
     
     // Constructor copy
@@ -68,5 +76,7 @@ class Bank: Decodable {
         self.shortname = bank.shortname
         self.website = bank.website
         self.thumbnail = bank.thumbnail
+        self.telephone = bank.telephone
+        self.hotline = bank.hotline
     }
 }

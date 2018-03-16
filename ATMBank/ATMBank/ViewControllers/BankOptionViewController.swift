@@ -11,7 +11,7 @@ import RxSwift
 import RxCocoa
 
 class BankOptionViewController: UIViewController {
-
+    
     // MARK: IBOutlets
     @IBOutlet weak var tableViewBankOption: UITableView!
     @IBOutlet weak var heightConstraintContainerView: NSLayoutConstraint!
@@ -24,6 +24,7 @@ class BankOptionViewController: UIViewController {
     
     // MARK: Properties
     var viewModel: BankOptionViewModelType!
+    var selectedBank: Bank!
     private let disposeBag: DisposeBag = DisposeBag()
     private let optionItemHeight: CGFloat = 90.0
     
@@ -35,8 +36,8 @@ class BankOptionViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        bindViewModel()
         setUpTableView()
+        bindViewModel()
     }
     
     private func bindViewModel() {
@@ -44,12 +45,16 @@ class BankOptionViewController: UIViewController {
             .getBankOptions()
             .asObservable()
             .debug()
-            .bind(to: tableViewBankOption.rx.items(cellIdentifier: BankOptionCell.nibName, cellType: BankOptionCell.self)) { (index, element, cell) in
-                cell.bankOption = element
+            .bind(to: tableViewBankOption
+                .rx
+                .items(
+                    cellIdentifier: BankOptionCell.nibName,
+                    cellType: BankOptionCell.self)) { (index, element, cell) in
+                        cell.bankOption = element
             }
             .disposed(by: disposeBag)
     }
-
+    
     private func setUpTableView() {
         tableViewBankOption
             .rx
@@ -74,6 +79,27 @@ extension BankOptionViewController: UITableViewDelegate {
         let cell = tableView.cellForRow(at: indexPath) as! BankOptionCell
         cell.labelTitle.backgroundColor = Color.TableView.bankOptionBackgroundSelected
         cell.labelTitle.textColor = Color.TableView.bankOptionTextSelected
+        let bankOption = viewModel.getBankOption(at: indexPath)
+        switch bankOption.type {
+        case .branch:
+            break
+        case .atm:
+            break
+        case .website:
+            let storyboard = UIStoryboard.storyboard(storyboard: .main)
+            let websiteVC: WebsiteViewController = storyboard.instantiateViewController()
+            websiteVC.bank = selectedBank
+            DispatchQueue.main.async(execute: {
+                self.present(websiteVC, animated: true, completion: nil)
+            })
+            break
+        case .phone:
+            break
+        case .direction:
+            break
+        case .defaultType:
+            break
+        }
     }
     
     func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {

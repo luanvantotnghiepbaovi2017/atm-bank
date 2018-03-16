@@ -13,6 +13,7 @@ target 'ATMBank' do
   pod 'ReachabilitySwift'
   pod 'RxDataSources'
   pod 'Moya'
+  pod 'RSLoadingView'
   
   target 'ATMBankTests' do
     inherit! :search_paths
