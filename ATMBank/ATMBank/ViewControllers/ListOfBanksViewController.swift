@@ -9,6 +9,7 @@
 import UIKit
 import RxSwift
 import RxCocoa
+import PopupDialog
 
 class ListOfBanksViewController: UIViewController {
     // MARK: IBOutlets
@@ -26,16 +27,15 @@ class ListOfBanksViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         viewModel = ListOfBanksViewModel()
-        setupShadow()
-        setUpSearchView()
-        setUpSearchButton()
-        registerCell()
-        configureCollectionViewLayout()
-        bindViewModel()
-        modelSelected()
+        _setupShadow()
+        _setUpSearchView()
+        _setUpSearchButton()
+        _registerCell()
+        _configureCollectionViewLayout()
+        _bindViewModel()
     }
     
-    private func bindViewModel() {
+    private func _bindViewModel() {
         viewModel
             .getListOfBanks()
             .asObservable()
@@ -47,57 +47,31 @@ class ListOfBanksViewController: UIViewController {
                     .tap
                     .subscribe { [weak self] _ in
                         guard let strongSelf = self else { return }
-                        let storyboard = UIStoryboard.storyboard(storyboard: .main)
-                        let bankOptionVC: BankOptionViewController = storyboard.instantiateViewController()
-                        let optionWebsite = BankOption(id: "1", title: "Trang chủ", type: .website)
-                        let optionPhone = BankOption(id: "2", title: "Điện thoại", type: .phone)
-                        let optionDirection = BankOption(id: "3", title: "Chỉ đường", type: .direction)
-                        let options = [optionWebsite, optionPhone, optionDirection]
-                        bankOptionVC.viewModel = BankOptionViewModel(options: options)
-                        bankOptionVC.selectedBank = element
-                        strongSelf.present(bankOptionVC, animated: true, completion: nil)
+                        strongSelf._showPopupDialog(bank: element)
                     }
                     .disposed(by: cell.disposeBag)
             }
             .disposed(by: disposeBag)
     }
     
-    private func modelSelected() {
-        collectionViewListOfBanks
-            .rx
-            .modelSelected(Bank.self)
-            .subscribe(onNext: { [weak self] (bank) in
-                guard let strongSelf = self else { return }
-                let storyboard = UIStoryboard.storyboard(storyboard: .main)
-                let bankOptionVC: BankOptionViewController = storyboard.instantiateViewController()
-                let optionBranch = BankOption(id: "1", title: "Chi nhánh", type: .branch)
-                let optionATM = BankOption(id: "2", title: "ATM", type: .atm)
-                let options = [optionBranch, optionATM]
-                bankOptionVC.viewModel = BankOptionViewModel(options: options)
-                bankOptionVC.selectedBank = bank
-                strongSelf.present(bankOptionVC, animated: true, completion: nil)
-            })
-            .disposed(by: disposeBag)
-    }
-    
-    private func configureCollectionViewLayout() {
+    private func _configureCollectionViewLayout() {
         collectionViewListOfBanks
             .rx
             .setDelegate(self)
             .disposed(by: disposeBag)
     }
     
-    private func registerCell() {
+    private func _registerCell() {
         let listOfBanksCell = UINib(nibName: ListOfBanksCell.nibName, bundle: nil)
         collectionViewListOfBanks.register(listOfBanksCell, forCellWithReuseIdentifier: ListOfBanksCell.nibName)
     }
 
-    private func setUpSearchView() {
+    private func _setUpSearchView() {
         textFieldSearch.paddingLeft(value: 20.0)
         textFieldSearch.delegate = self
     }
     
-    private func setUpSearchButton() {
+    private func _setUpSearchButton() {
         buttonSearchAndClose
             .rx
             .tap
@@ -105,7 +79,7 @@ class ListOfBanksViewController: UIViewController {
                 guard let strongSelf = self else { return }
                 if !strongSelf.isShowSearchIcon {
                     strongSelf.textFieldSearch.text?.removeAll()
-                    strongSelf.updateSearchIcon(value: false)
+                    strongSelf._updateSearchIcon(value: false)
                     strongSelf.viewModel.resetToOriginalBankList()
                     strongSelf.textFieldSearch.resignFirstResponder()
                 }
@@ -113,7 +87,7 @@ class ListOfBanksViewController: UIViewController {
             .disposed(by: disposeBag)
     }
     
-    private func updateSearchIcon(value: Bool) {
+    private func _updateSearchIcon(value: Bool) {
         if value {
             isShowSearchIcon = false
             buttonSearchAndClose.setImage(UIImage(named: "search_close"), for: .normal)
@@ -123,7 +97,7 @@ class ListOfBanksViewController: UIViewController {
         }
     }
     
-    private func setupShadow() {
+    private func _setupShadow() {
         viewSearch.layer.shadowOffset =  CGSize(width: 1, height: 1)
         viewSearch.layer.shadowColor = UIColor.gray.cgColor
         viewSearch.layer.shadowRadius = 2.0
@@ -133,7 +107,7 @@ class ListOfBanksViewController: UIViewController {
         viewSearch.layer.masksToBounds = false
     }
     
-    @objc private func getHintsFromTextField(textField: UITextField) {
+    @objc private func _getHintsFromTextField(textField: UITextField) {
         if let text = textField.text {
             if !Helper.isEmptyData(data: text) {
                 viewModel.searchBank(value: text)
@@ -141,6 +115,50 @@ class ListOfBanksViewController: UIViewController {
                 viewModel.resetToOriginalBankList()
             }
         }
+    }
+    
+    private func _showPopupDialog(bank: Bank) {
+        let dialogAppearance = PopupDialogDefaultView.appearance()
+        dialogAppearance.titleFont = Font.Dialog.mainTitle
+        
+        let defaultButtonAppearance = DefaultButton.appearance()
+        defaultButtonAppearance.titleFont = Font.Dialog.optionTitle
+        
+        let cancelButtonAppearance = CancelButton.appearance()
+        cancelButtonAppearance.titleFont = Font.Dialog.optionTitle
+        
+        let message: String = ""
+        var title: String = bank.fullnameVN.uppercased()
+        if Language.currentAppleLanguage() == LanguageCode.en {
+            title = bank.fullnameEN.uppercased()
+        }
+        
+        let image: UIImage = UIImage(named: bank.thumbnail)!
+        let popupDialog = PopupDialog(title: title, message: message, image: image, buttonAlignment: .vertical, transitionStyle: .bounceUp, gestureDismissal: true, hideStatusBar: true)
+        
+        let buttonWebsite = DefaultButton(title: "WEBSITE") {
+            let storyboard = UIStoryboard.storyboard(storyboard: .main)
+            let websiteVC: WebsiteViewController = storyboard.instantiateViewController()
+            websiteVC.bank = bank
+            self.present(websiteVC, animated: true, completion: nil)
+        }
+        let buttonBranch = DefaultButton(title: "BRANCH") {
+            
+        }
+        let buttonATM = DefaultButton(title: "ATM") {
+            
+        }
+        let buttonPhone = DefaultButton(title: "PHONE") {
+            
+        }
+        let buttonDirection = DefaultButton(title: "DIRECTION") {
+            
+        }
+        let buttonCancel = CancelButton(title: "CANCEL") {
+            popupDialog.dismiss()
+        }
+        popupDialog.addButtons([buttonWebsite, buttonBranch, buttonATM, buttonPhone,buttonDirection, buttonCancel])
+        self.present(popupDialog, animated: true, completion: nil)
     }
     
     override func didReceiveMemoryWarning() {
@@ -162,12 +180,12 @@ extension ListOfBanksViewController: UICollectionViewDelegateFlowLayout {
 // MARK: Extension - UITextFieldDelegate
 extension ListOfBanksViewController: UITextFieldDelegate {
     func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
-        updateSearchIcon(value: true)
+        _updateSearchIcon(value: true)
         return true
     }
     
     func textFieldShouldEndEditing(_ textField: UITextField) -> Bool {
-        updateSearchIcon(value: false)
+        _updateSearchIcon(value: false)
         return true
     }
     
@@ -175,10 +193,10 @@ extension ListOfBanksViewController: UITextFieldDelegate {
         // Delay user typing text
         NSObject.cancelPreviousPerformRequests(
             withTarget: self,
-            selector: #selector(getHintsFromTextField),
+            selector: #selector(_getHintsFromTextField),
             object: textField)
         self.perform(
-            #selector(getHintsFromTextField),
+            #selector(_getHintsFromTextField),
             with: textField,
             afterDelay: 0.5)
         return true

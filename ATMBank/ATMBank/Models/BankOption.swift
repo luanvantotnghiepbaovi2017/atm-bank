@@ -14,16 +14,3 @@ enum BankOptionType {
     case direction
     case defaultType
 }
-
-class BankOption {
-    // MARK: Properties
-    var id: String = ""
-    var title: String = ""
-    var type: BankOptionType = .defaultType
-    
-    init(id: String, title: String, type: BankOptionType) {
-        self.id = id
-        self.title = title
-        self.type = type
-    }
-}

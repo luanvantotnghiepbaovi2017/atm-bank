@@ -41,6 +41,7 @@ class WebsiteViewController: UIViewController {
         guard let url = URL(string: bank.website) else { return }
         _webView = WKWebView(frame: CGRect(origin: CGPoint.zero, size: containerView.frame.size))
         _webView.allowsBackForwardNavigationGestures = true
+        _webView.scrollView.bounces = false
         _webView.navigationDelegate = self
         _webView.load(URLRequest(url: url))
         containerView.addSubview(_webView)

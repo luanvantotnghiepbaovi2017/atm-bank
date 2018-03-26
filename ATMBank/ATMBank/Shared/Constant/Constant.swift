@@ -27,6 +27,14 @@ struct Color {
     }
 }
 
+struct Font {
+    struct Dialog {
+        static let mainTitle = UIFont(name: "AvenirNext-Medium", size: 16.0) ?? UIFont.systemFont(ofSize: 16.0)
+        static let optionTitle = UIFont(name: "AvenirNext-Regular", size: 14.0) ?? UIFont.systemFont(ofSize: 14.0)
+    }
+}
+
+
 struct LanguageCode {
     // English
     static let en = "en"

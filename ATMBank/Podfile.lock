@@ -1,6 +1,7 @@
 PODS:
   - Alamofire (4.6.0)
   - Differentiator (3.0.2)
+  - DynamicBlurView (2.0.2)
   - IQKeyboardManagerSwift (5.0.7)
   - Kingfisher (4.6.2)
   - Moya (11.0.0):
@@ -8,6 +9,8 @@ PODS:
   - Moya/Core (11.0.0):
     - Alamofire (~> 4.1)
     - Result (~> 3.0)
+  - PopupDialog (0.7.0):
+    - DynamicBlurView (~> 2.0)
   - ReachabilitySwift (4.1.0)
   - Result (3.2.4)
   - RSLoadingView (1.1.2)
@@ -23,6 +26,7 @@ DEPENDENCIES:
   - IQKeyboardManagerSwift
   - Kingfisher
   - Moya
+  - PopupDialog
   - ReachabilitySwift
   - RSLoadingView
   - RxCocoa (~> 4.0)
@@ -32,9 +36,11 @@ DEPENDENCIES:
 SPEC CHECKSUMS:
   Alamofire: f41a599bd63041760b26d393ec1069d9d7b917f4
   Differentiator: a87be69eba49ec4ab460c7671143ee3a9eececfd
+  DynamicBlurView: aa6db4defc6e537eb86fc5e58dd3991666178399
   IQKeyboardManagerSwift: 30fb3a61de1af53a95e02b80fb54ed0a19d5ede5
   Kingfisher: 55b9c395bf8d3949676ad3861111923990ab68cf
   Moya: be29766339783963a70d1279d69c891ab3a1393c
+  PopupDialog: 4abc6db5b22b7c8029e2162bde8891ee6aa4b6c8
   ReachabilitySwift: 6849231cd4e06559f3b9ef4a97a0a0f96d41e09f
   Result: d2d07204ce72856f1fd9130bbe42c35a7b0fea10
   RSLoadingView: fdfeee9968b6dad2559169a97da0ad2580371f3a
@@ -42,6 +48,6 @@ SPEC CHECKSUMS:
   RxDataSources: cb7c31e652a87ebb919da45f716bbb87b3765f6b
   RxSwift: e49536837d9901277638493ea537394d4b55f570
 
-PODFILE CHECKSUM: 08ee4671eb7f344a8a280321762b8a51d7222966
+PODFILE CHECKSUM: 325cecfbd9ee484fb638a9a8171c3ac3cfc8bee3
 
 COCOAPODS: 1.4.0

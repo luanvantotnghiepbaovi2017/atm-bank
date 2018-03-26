@@ -22,9 +22,6 @@
 		397A725920458FD80035C004 /* UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397A725820458FD80035C004 /* UITextField.swift */; };
 		39AF4B1B20499E0E00928FA4 /* SuburbanDistrictHCM.json in Resources */ = {isa = PBXBuildFile; fileRef = 39AF4B1920499E0E00928FA4 /* SuburbanDistrictHCM.json */; };
 		39AF4B1C20499E0E00928FA4 /* DistrictHCM.json in Resources */ = {isa = PBXBuildFile; fileRef = 39AF4B1A20499E0E00928FA4 /* DistrictHCM.json */; };
-		39AF4B1E204D74F900928FA4 /* BankOptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39AF4B1D204D74F900928FA4 /* BankOptionViewController.swift */; };
-		39AF4B20204D753500928FA4 /* BankOptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39AF4B1F204D753500928FA4 /* BankOptionCell.swift */; };
-		39B1C2A5204D7653003D94EE /* BankOptionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B1C2A4204D7653003D94EE /* BankOptionViewModel.swift */; };
 		39B1C2A7204D768E003D94EE /* BankOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B1C2A6204D768E003D94EE /* BankOption.swift */; };
 		39B1C2A9204D7E36003D94EE /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B1C2A8204D7E36003D94EE /* UIColor.swift */; };
 		39E359CA2042E5C5002CF86E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E359C92042E5C5002CF86E /* AppDelegate.swift */; };
@@ -83,9 +80,6 @@
 		397A725820458FD80035C004 /* UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextField.swift; sourceTree = "<group>"; };
 		39AF4B1920499E0E00928FA4 /* SuburbanDistrictHCM.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SuburbanDistrictHCM.json; sourceTree = "<group>"; };
 		39AF4B1A20499E0E00928FA4 /* DistrictHCM.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = DistrictHCM.json; sourceTree = "<group>"; };
-		39AF4B1D204D74F900928FA4 /* BankOptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankOptionViewController.swift; sourceTree = "<group>"; };
-		39AF4B1F204D753500928FA4 /* BankOptionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankOptionCell.swift; sourceTree = "<group>"; };
-		39B1C2A4204D7653003D94EE /* BankOptionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankOptionViewModel.swift; sourceTree = "<group>"; };
 		39B1C2A6204D768E003D94EE /* BankOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankOption.swift; sourceTree = "<group>"; };
 		39B1C2A8204D7E36003D94EE /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		39E359C62042E5C5002CF86E /* ATMBank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ATMBank.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -248,7 +242,6 @@
 			isa = PBXGroup;
 			children = (
 				39E6165E2043084E00B8B742 /* ListOfBanksViewModel.swift */,
-				39B1C2A4204D7653003D94EE /* BankOptionViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -259,7 +252,6 @@
 				39E6166420430D5700B8B742 /* HomeViewController.swift */,
 				39E6166C2043108000B8B742 /* ListOfBanksViewController.swift */,
 				39E6166E2043108900B8B742 /* HistoryViewController.swift */,
-				39AF4B1D204D74F900928FA4 /* BankOptionViewController.swift */,
 				3930E857205585F5000D67CA /* WebsiteViewController.swift */,
 			);
 			path = ViewControllers;
@@ -352,7 +344,6 @@
 		39E616712043118400B8B742 /* TableViewCells */ = {
 			isa = PBXGroup;
 			children = (
-				39AF4B1F204D753500928FA4 /* BankOptionCell.swift */,
 			);
 			path = TableViewCells;
 			sourceTree = "<group>";
@@ -603,9 +594,11 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-ATMBank/Pods-ATMBank-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
+				"${BUILT_PRODUCTS_DIR}/DynamicBlurView/DynamicBlurView.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/PopupDialog/PopupDialog.framework",
 				"${BUILT_PRODUCTS_DIR}/RSLoadingView/RSLoadingView.framework",
 				"${BUILT_PRODUCTS_DIR}/ReachabilitySwift/Reachability.framework",
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
@@ -617,9 +610,11 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DynamicBlurView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PopupDialog.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RSLoadingView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reachability.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
@@ -705,7 +700,6 @@
 				39E6165F2043084E00B8B742 /* ListOfBanksViewModel.swift in Sources */,
 				397A724E204317820035C004 /* Language.swift in Sources */,
 				39B1C2A7204D768E003D94EE /* BankOption.swift in Sources */,
-				39B1C2A5204D7653003D94EE /* BankOptionViewModel.swift in Sources */,
 				39E6166F2043108900B8B742 /* HistoryViewController.swift in Sources */,
 				397A7247204316DF0035C004 /* UIStoryboard.swift in Sources */,
 				39E6165B204302CE00B8B742 /* Bank.swift in Sources */,
@@ -715,8 +709,6 @@
 				39B1C2A9204D7E36003D94EE /* UIColor.swift in Sources */,
 				397A724C204317770035C004 /* LocalizeHelper.swift in Sources */,
 				397A725920458FD80035C004 /* UITextField.swift in Sources */,
-				39AF4B20204D753500928FA4 /* BankOptionCell.swift in Sources */,
-				39AF4B1E204D74F900928FA4 /* BankOptionViewController.swift in Sources */,
 				39E6166320430B8200B8B742 /* Constant.swift in Sources */,
 				39E6166D2043108000B8B742 /* ListOfBanksViewController.swift in Sources */,
 				3930E858205585F5000D67CA /* WebsiteViewController.swift in Sources */,
