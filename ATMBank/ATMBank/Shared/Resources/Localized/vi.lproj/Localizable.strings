@@ -1,0 +1,18 @@
+/* 
+  Localizable.strings
+  ATMBank
+
+  Created by Bao on 3/29/18.
+  Copyright © 2018 TranQuocBao. All rights reserved.
+*/
+
+// Search Bar
+"search_bar_placeholder"="Nhập từ khoá...";
+
+// Dialog Popup
+"dialog_popup_option_website"="TRANG CHỦ";
+"dialog_popup_option_branch"="CHI NHÁNH";
+"dialog_popup_option_atm"="ATM";
+"dialog_popup_option_phone"="ĐIỆN THOẠI";
+"dialog_popup_option_direction"="CHỈ ĐƯỜNG";
+"dialog_popup_option_cancel"="HUỶ";

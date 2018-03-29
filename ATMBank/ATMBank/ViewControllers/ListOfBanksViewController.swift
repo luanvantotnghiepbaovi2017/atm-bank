@@ -67,6 +67,7 @@ class ListOfBanksViewController: UIViewController {
     }
 
     private func _setUpSearchView() {
+        textFieldSearch.placeholder = "search_bar_placeholder".localized
         textFieldSearch.paddingLeft(value: 20.0)
         textFieldSearch.delegate = self
     }
@@ -124,37 +125,37 @@ class ListOfBanksViewController: UIViewController {
         let defaultButtonAppearance = DefaultButton.appearance()
         defaultButtonAppearance.titleFont = Font.Dialog.optionTitle
         
-        let cancelButtonAppearance = CancelButton.appearance()
+        let cancelButtonAppearance = DestructiveButton.appearance()
         cancelButtonAppearance.titleFont = Font.Dialog.optionTitle
         
         let message: String = ""
-        var title: String = bank.fullnameVN.uppercased()
-        if Language.currentAppleLanguage() == LanguageCode.en {
-            title = bank.fullnameEN.uppercased()
+        var title: String = bank.fullnameEN.uppercased()
+        if Language.currentAppleLanguage() == LanguageCode.vn {
+            title = bank.fullnameVN.uppercased()
         }
         
         let image: UIImage = UIImage(named: bank.thumbnail)!
         let popupDialog = PopupDialog(title: title, message: message, image: image, buttonAlignment: .vertical, transitionStyle: .bounceUp, gestureDismissal: true, hideStatusBar: true)
         
-        let buttonWebsite = DefaultButton(title: "WEBSITE") {
+        let buttonWebsite = DefaultButton(title: "dialog_popup_option_website".localized) {
             let storyboard = UIStoryboard.storyboard(storyboard: .main)
             let websiteVC: WebsiteViewController = storyboard.instantiateViewController()
             websiteVC.bank = bank
             self.present(websiteVC, animated: true, completion: nil)
         }
-        let buttonBranch = DefaultButton(title: "BRANCH") {
+        let buttonBranch = DefaultButton(title: "dialog_popup_option_branch".localized) {
             
         }
-        let buttonATM = DefaultButton(title: "ATM") {
+        let buttonATM = DefaultButton(title: "dialog_popup_option_atm".localized) {
             
         }
-        let buttonPhone = DefaultButton(title: "PHONE") {
+        let buttonPhone = DefaultButton(title: "dialog_popup_option_phone".localized) {
             
         }
-        let buttonDirection = DefaultButton(title: "DIRECTION") {
+        let buttonDirection = DefaultButton(title: "dialog_popup_option_direction".localized) {
             
         }
-        let buttonCancel = CancelButton(title: "CANCEL") {
+        let buttonCancel = DestructiveButton(title: "dialog_popup_option_cancel".localized) {
             popupDialog.dismiss()
         }
         popupDialog.addButtons([buttonWebsite, buttonBranch, buttonATM, buttonPhone,buttonDirection, buttonCancel])

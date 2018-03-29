@@ -1,0 +1,18 @@
+/* 
+  Localizable.strings
+  ATMBank
+
+  Created by Bao on 3/29/18.
+  Copyright © 2018 TranQuocBao. All rights reserved.
+*/
+
+// Search Bar
+"search_bar_placeholder"="Enter your keywords...";
+
+// Dialog Popup
+"dialog_popup_option_website"="WEBSITE";
+"dialog_popup_option_branch"="BRANCH";
+"dialog_popup_option_atm"="ATM";
+"dialog_popup_option_phone"="PHONE";
+"dialog_popup_option_direction"="DIRECTION";
+"dialog_popup_option_cancel"="CANCEL";

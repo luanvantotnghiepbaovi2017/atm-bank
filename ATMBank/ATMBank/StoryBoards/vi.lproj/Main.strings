@@ -1,0 +1,12 @@
+
+/* Class = "UILabel"; text = "HISTORY"; ObjectID = "JhS-nV-12A"; */
+"JhS-nV-12A.text" = "HISTORY";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "k2H-0U-AEc"; */
+"k2H-0U-AEc.text" = "Label";
+
+/* Class = "UIViewController"; title = "HOME"; ObjectID = "ljg-yJ-oeZ"; */
+"ljg-yJ-oeZ.title" = "HOME";
+
+/* Class = "UITextField"; placeholder = "Nhập từ khoá..."; ObjectID = "n45-mm-WeH"; */
+"n45-mm-WeH.placeholder" = "Nhập từ khoá...";
