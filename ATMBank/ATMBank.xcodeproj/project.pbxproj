@@ -8,6 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		1C9ECF80C5959EE05A352ADB /* Pods_ATMBankTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D681F1709A34462519AE1C1 /* Pods_ATMBankTests.framework */; };
+		34B858CB2076119B008D5973 /* GoogleMaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34B858C920761199008D5973 /* GoogleMaps.framework */; };
+		34B858CC2076119B008D5973 /* GoogleMapsCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34B858CA2076119B008D5973 /* GoogleMapsCore.framework */; };
+		34B858CE207611A4008D5973 /* GoogleMapsBase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34B858CD207611A4008D5973 /* GoogleMapsBase.framework */; };
+		34B858D0207611E9008D5973 /* GoogleMaps.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 34B858CF207611E9008D5973 /* GoogleMaps.bundle */; };
+		34B858D220761215008D5973 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34B858D120761215008D5973 /* Accelerate.framework */; };
+		34B858D420761221008D5973 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34B858D320761221008D5973 /* CoreData.framework */; };
+		34B858D62076122C008D5973 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34B858D52076122B008D5973 /* CoreGraphics.framework */; };
+		34B858D820761238008D5973 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34B858D720761237008D5973 /* CoreImage.framework */; };
+		34B858DA20761242008D5973 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34B858D920761242008D5973 /* CoreLocation.framework */; };
+		34B858DC2076124D008D5973 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34B858DB2076124D008D5973 /* CoreTelephony.framework */; };
+		34B858DE20761258008D5973 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34B858DD20761258008D5973 /* CoreText.framework */; };
+		34B858E020761264008D5973 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34B858DF20761263008D5973 /* GLKit.framework */; };
+		34B858E22076126D008D5973 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34B858E12076126D008D5973 /* ImageIO.framework */; };
+		34B858E420761277008D5973 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 34B858E320761277008D5973 /* libc++.tbd */; };
+		34B858E62076127F008D5973 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 34B858E52076127F008D5973 /* libz.tbd */; };
+		34B858E820761288008D5973 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34B858E720761288008D5973 /* OpenGLES.framework */; };
+		34B858EA20761293008D5973 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34B858E920761293008D5973 /* QuartzCore.framework */; };
+		34B858EC2076129B008D5973 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34B858EB2076129B008D5973 /* SystemConfiguration.framework */; };
+		34B858EE207612A2008D5973 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34B858ED207612A2008D5973 /* UIKit.framework */; };
+		34B858F020761393008D5973 /* NearByBanksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B858EF20761393008D5973 /* NearByBanksViewController.swift */; };
 		391D181920482CBB0090C862 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391D181820482CBB0090C862 /* Helper.swift */; };
 		392A43042050457A0011B0C8 /* ListOfBanksInVN.json in Resources */ = {isa = PBXBuildFile; fileRef = 392A43032050457A0011B0C8 /* ListOfBanksInVN.json */; };
 		3930E858205585F5000D67CA /* WebsiteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3930E857205585F5000D67CA /* WebsiteViewController.swift */; };
@@ -67,6 +87,26 @@
 		159B0CCB3678D2596FBD288D /* Pods-ATMBank.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ATMBank.release.xcconfig"; path = "Pods/Target Support Files/Pods-ATMBank/Pods-ATMBank.release.xcconfig"; sourceTree = "<group>"; };
 		177AAFD3D7EE76A5B8EA4C7A /* Pods-ATMBankUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ATMBankUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ATMBankUITests/Pods-ATMBankUITests.release.xcconfig"; sourceTree = "<group>"; };
 		2D681F1709A34462519AE1C1 /* Pods_ATMBankTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ATMBankTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		34B858C920761199008D5973 /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMaps.framework; sourceTree = "<group>"; };
+		34B858CA2076119B008D5973 /* GoogleMapsCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMapsCore.framework; sourceTree = "<group>"; };
+		34B858CD207611A4008D5973 /* GoogleMapsBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMapsBase.framework; sourceTree = "<group>"; };
+		34B858CF207611E9008D5973 /* GoogleMaps.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = GoogleMaps.framework/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
+		34B858D120761215008D5973 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		34B858D320761221008D5973 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		34B858D52076122B008D5973 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		34B858D720761237008D5973 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		34B858D920761242008D5973 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		34B858DB2076124D008D5973 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		34B858DD20761258008D5973 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		34B858DF20761263008D5973 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		34B858E12076126D008D5973 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		34B858E320761277008D5973 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		34B858E52076127F008D5973 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		34B858E720761288008D5973 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		34B858E920761293008D5973 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		34B858EB2076129B008D5973 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		34B858ED207612A2008D5973 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		34B858EF20761393008D5973 /* NearByBanksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearByBanksViewController.swift; sourceTree = "<group>"; };
 		391D181820482CBB0090C862 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		392A43032050457A0011B0C8 /* ListOfBanksInVN.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ListOfBanksInVN.json; sourceTree = "<group>"; };
 		3930E857205585F5000D67CA /* WebsiteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebsiteViewController.swift; sourceTree = "<group>"; };
@@ -123,6 +163,24 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34B858EE207612A2008D5973 /* UIKit.framework in Frameworks */,
+				34B858EC2076129B008D5973 /* SystemConfiguration.framework in Frameworks */,
+				34B858EA20761293008D5973 /* QuartzCore.framework in Frameworks */,
+				34B858E820761288008D5973 /* OpenGLES.framework in Frameworks */,
+				34B858E62076127F008D5973 /* libz.tbd in Frameworks */,
+				34B858E420761277008D5973 /* libc++.tbd in Frameworks */,
+				34B858E22076126D008D5973 /* ImageIO.framework in Frameworks */,
+				34B858E020761264008D5973 /* GLKit.framework in Frameworks */,
+				34B858DE20761258008D5973 /* CoreText.framework in Frameworks */,
+				34B858DC2076124D008D5973 /* CoreTelephony.framework in Frameworks */,
+				34B858DA20761242008D5973 /* CoreLocation.framework in Frameworks */,
+				34B858D820761238008D5973 /* CoreImage.framework in Frameworks */,
+				34B858D62076122C008D5973 /* CoreGraphics.framework in Frameworks */,
+				34B858D420761221008D5973 /* CoreData.framework in Frameworks */,
+				34B858D220761215008D5973 /* Accelerate.framework in Frameworks */,
+				34B858CB2076119B008D5973 /* GoogleMaps.framework in Frameworks */,
+				34B858CE207611A4008D5973 /* GoogleMapsBase.framework in Frameworks */,
+				34B858CC2076119B008D5973 /* GoogleMapsCore.framework in Frameworks */,
 				FF7563DF14A739C1865299D0 /* Pods_ATMBank.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -266,6 +324,7 @@
 				39E6166C2043108000B8B742 /* ListOfBanksViewController.swift */,
 				39E6166E2043108900B8B742 /* HistoryViewController.swift */,
 				3930E857205585F5000D67CA /* WebsiteViewController.swift */,
+				34B858EF20761393008D5973 /* NearByBanksViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -365,6 +424,25 @@
 		4F2CAA80DD0324A4611016FE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				34B858ED207612A2008D5973 /* UIKit.framework */,
+				34B858EB2076129B008D5973 /* SystemConfiguration.framework */,
+				34B858E920761293008D5973 /* QuartzCore.framework */,
+				34B858E720761288008D5973 /* OpenGLES.framework */,
+				34B858E52076127F008D5973 /* libz.tbd */,
+				34B858E320761277008D5973 /* libc++.tbd */,
+				34B858E12076126D008D5973 /* ImageIO.framework */,
+				34B858DF20761263008D5973 /* GLKit.framework */,
+				34B858DD20761258008D5973 /* CoreText.framework */,
+				34B858DB2076124D008D5973 /* CoreTelephony.framework */,
+				34B858D920761242008D5973 /* CoreLocation.framework */,
+				34B858D720761237008D5973 /* CoreImage.framework */,
+				34B858D52076122B008D5973 /* CoreGraphics.framework */,
+				34B858D320761221008D5973 /* CoreData.framework */,
+				34B858D120761215008D5973 /* Accelerate.framework */,
+				34B858CF207611E9008D5973 /* GoogleMaps.bundle */,
+				34B858CD207611A4008D5973 /* GoogleMapsBase.framework */,
+				34B858C920761199008D5973 /* GoogleMaps.framework */,
+				34B858CA2076119B008D5973 /* GoogleMapsCore.framework */,
 				50C6AA5D0317163A55ED4780 /* Pods_ATMBank.framework */,
 				2D681F1709A34462519AE1C1 /* Pods_ATMBankTests.framework */,
 				AE8488DFF2FF73AE0F38E9A7 /* Pods_ATMBankUITests.framework */,
@@ -502,6 +580,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				39AF4B1B20499E0E00928FA4 /* SuburbanDistrictHCM.json in Resources */,
+				34B858D0207611E9008D5973 /* GoogleMaps.bundle in Resources */,
 				39E359D72042E5C5002CF86E /* LaunchScreen.storyboard in Resources */,
 				39E6166B2043104000B8B742 /* Lato-Regular.ttf in Resources */,
 				392A43042050457A0011B0C8 /* ListOfBanksInVN.json in Resources */,
@@ -727,6 +806,7 @@
 				39E6166320430B8200B8B742 /* Constant.swift in Sources */,
 				39E6166D2043108000B8B742 /* ListOfBanksViewController.swift in Sources */,
 				3930E858205585F5000D67CA /* WebsiteViewController.swift in Sources */,
+				34B858F020761393008D5973 /* NearByBanksViewController.swift in Sources */,
 				397A7256204334440035C004 /* ListOfBanksCell.swift in Sources */,
 				39E359CA2042E5C5002CF86E /* AppDelegate.swift in Sources */,
 				397A7249204317160035C004 /* String.swift in Sources */,
@@ -912,9 +992,43 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4395L5MX45;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = ATMBank/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"Alamofire\"",
+					"-framework",
+					"\"Differentiator\"",
+					"-framework",
+					"\"DynamicBlurView\"",
+					"-framework",
+					"\"IQKeyboardManagerSwift\"",
+					"-framework",
+					"\"Kingfisher\"",
+					"-framework",
+					"\"Moya\"",
+					"-framework",
+					"\"PopupDialog\"",
+					"-framework",
+					"\"RSLoadingView\"",
+					"-framework",
+					"\"Reachability\"",
+					"-framework",
+					"\"Result\"",
+					"-framework",
+					"\"RxCocoa\"",
+					"-framework",
+					"\"RxDataSources\"",
+					"-framework",
+					"\"RxSwift\"",
+					"-ObjC",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.tranquocbao.ios.project.ATMBank;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -929,9 +1043,43 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4395L5MX45;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = ATMBank/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"Alamofire\"",
+					"-framework",
+					"\"Differentiator\"",
+					"-framework",
+					"\"DynamicBlurView\"",
+					"-framework",
+					"\"IQKeyboardManagerSwift\"",
+					"-framework",
+					"\"Kingfisher\"",
+					"-framework",
+					"\"Moya\"",
+					"-framework",
+					"\"PopupDialog\"",
+					"-framework",
+					"\"RSLoadingView\"",
+					"-framework",
+					"\"Reachability\"",
+					"-framework",
+					"\"Result\"",
+					"-framework",
+					"\"RxCocoa\"",
+					"-framework",
+					"\"RxDataSources\"",
+					"-framework",
+					"\"RxSwift\"",
+					"-ObjC",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.tranquocbao.ios.project.ATMBank;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

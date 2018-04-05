@@ -9,6 +9,8 @@
 import UIKit
 
 class HistoryViewController: UIViewController {
+    // MARK: IBOutlets
+    
     // MARK: Properties
     
     // MARK: Methods
