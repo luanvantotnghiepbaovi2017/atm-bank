@@ -10,6 +10,10 @@ import UIKit
 
 let currentLanguage = Language.currentAppleLanguage()
 
+struct GoogleMapsAPI {
+    static let key = "AIzaSyAPh-106hMRaS6NviOtDvdWrJZEEBMwFmA"
+}
+
 struct JSONFileName {
     static let listOfBanksInVN = "ListOfBanksInVN"
 }

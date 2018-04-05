@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreData
+import GoogleMaps
 import IQKeyboardManagerSwift
 
 @UIApplicationMain
@@ -21,6 +22,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Set up IQKeyBoardManager
         IQKeyboardManager.sharedManager().enable = true
         IQKeyboardManager.sharedManager().shouldResignOnTouchOutside = true
+        
+        // Set up GoogleMapAPI key
+        GMSServices.provideAPIKey(GoogleMapsAPI.key)
         
         return true
     }
