@@ -16,3 +16,8 @@
 "dialog_popup_option_phone"="ĐIỆN THOẠI";
 "dialog_popup_option_direction"="CHỈ ĐƯỜNG";
 "dialog_popup_option_cancel"="HUỶ";
+
+// Near By Banks ViewController
+"near_by_banks_button_bank_filter_title"="NGÂN HÀNG";
+"near_by_banks_button_atm_filter_title"="ATM";
+"near_by_banks_button_radius_filter_title"="BÁN KÍNH (KM)";

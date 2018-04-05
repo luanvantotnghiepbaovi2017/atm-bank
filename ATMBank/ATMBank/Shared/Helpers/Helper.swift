@@ -8,6 +8,7 @@
 
 import Foundation
 import RSLoadingView
+import GoogleMaps
 
 class Helper {
     // MARK: Properties
@@ -21,5 +22,10 @@ class Helper {
     }
     class func hideLoadingView() {
         loadingView.hide()
+    }
+    class func moveMapViewCameraTo(position: Location, zoomLevel: Float, mapView: GMSMapView) {
+        let position = CLLocationCoordinate2DMake(position.lat, position.long)
+        let camera = GMSCameraPosition.camera(withTarget: position, zoom: zoomLevel)
+        mapView.animate(to: camera)
     }
 }

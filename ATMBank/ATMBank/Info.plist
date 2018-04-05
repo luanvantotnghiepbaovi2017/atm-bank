@@ -54,5 +54,10 @@
 	<string>Your current locacation will be displayed on the app and used for directions, nearby search results.</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>Your current locacation will be displayed on the app and used for directions, nearby search results.</string>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>googlechromes</string>
+		<string>comgooglemaps</string>
+	</array>
 </dict>
 </plist>

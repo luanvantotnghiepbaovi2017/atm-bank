@@ -16,3 +16,8 @@
 "dialog_popup_option_phone"="PHONE";
 "dialog_popup_option_direction"="DIRECTION";
 "dialog_popup_option_cancel"="CANCEL";
+
+// Near By Banks ViewController
+"near_by_banks_button_bank_filter_title"="BANK";
+"near_by_banks_button_atm_filter_title"="ATM";
+"near_by_banks_button_radius_filter_title"="RADIUS (KM)";
