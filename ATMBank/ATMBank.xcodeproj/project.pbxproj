@@ -29,6 +29,8 @@
 		34B858EE207612A2008D5973 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34B858ED207612A2008D5973 /* UIKit.framework */; };
 		34B858F020761393008D5973 /* NearByBanksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B858EF20761393008D5973 /* NearByBanksViewController.swift */; };
 		391D181920482CBB0090C862 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391D181820482CBB0090C862 /* Helper.swift */; };
+		391ED2692077CDA1001AF170 /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391ED2682077CDA1001AF170 /* UIButton.swift */; };
+		391ED26B2077D6EB001AF170 /* NearByBanksViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391ED26A2077D6EB001AF170 /* NearByBanksViewModel.swift */; };
 		392A43042050457A0011B0C8 /* ListOfBanksInVN.json in Resources */ = {isa = PBXBuildFile; fileRef = 392A43032050457A0011B0C8 /* ListOfBanksInVN.json */; };
 		3930E858205585F5000D67CA /* WebsiteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3930E857205585F5000D67CA /* WebsiteViewController.swift */; };
 		394A36EF206D4F43002EEF9D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 394A36F1206D4F43002EEF9D /* Localizable.strings */; };
@@ -108,6 +110,8 @@
 		34B858ED207612A2008D5973 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		34B858EF20761393008D5973 /* NearByBanksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearByBanksViewController.swift; sourceTree = "<group>"; };
 		391D181820482CBB0090C862 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		391ED2682077CDA1001AF170 /* UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
+		391ED26A2077D6EB001AF170 /* NearByBanksViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearByBanksViewModel.swift; sourceTree = "<group>"; };
 		392A43032050457A0011B0C8 /* ListOfBanksInVN.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ListOfBanksInVN.json; sourceTree = "<group>"; };
 		3930E857205585F5000D67CA /* WebsiteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebsiteViewController.swift; sourceTree = "<group>"; };
 		394A36EA206D4EC8002EEF9D /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/Main.strings; sourceTree = "<group>"; };
@@ -313,6 +317,7 @@
 			isa = PBXGroup;
 			children = (
 				39E6165E2043084E00B8B742 /* ListOfBanksViewModel.swift */,
+				391ED26A2077D6EB001AF170 /* NearByBanksViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -365,6 +370,7 @@
 				397A72512043203E0035C004 /* UIView.swift */,
 				397A725820458FD80035C004 /* UITextField.swift */,
 				39B1C2A8204D7E36003D94EE /* UIColor.swift */,
+				391ED2682077CDA1001AF170 /* UIButton.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -795,10 +801,12 @@
 				397A724E204317820035C004 /* Language.swift in Sources */,
 				39B1C2A7204D768E003D94EE /* BankOption.swift in Sources */,
 				39E6166F2043108900B8B742 /* HistoryViewController.swift in Sources */,
+				391ED26B2077D6EB001AF170 /* NearByBanksViewModel.swift in Sources */,
 				397A7247204316DF0035C004 /* UIStoryboard.swift in Sources */,
 				39E6165B204302CE00B8B742 /* Bank.swift in Sources */,
 				391D181920482CBB0090C862 /* Helper.swift in Sources */,
 				39E6166520430D5700B8B742 /* HomeViewController.swift in Sources */,
+				391ED2692077CDA1001AF170 /* UIButton.swift in Sources */,
 				397A7250204317890035C004 /* Localizer.swift in Sources */,
 				39B1C2A9204D7E36003D94EE /* UIColor.swift in Sources */,
 				397A724C204317770035C004 /* LocalizeHelper.swift in Sources */,

@@ -28,4 +28,10 @@ class Helper {
         let camera = GMSCameraPosition.camera(withTarget: position, zoom: zoomLevel)
         mapView.animate(to: camera)
     }
+    class func setFontAvenirNextMedium(with fontSize: CGFloat) -> UIFont {
+        return UIFont(name: "AvenirNext-Medium", size: fontSize) ?? UIFont.systemFont(ofSize: fontSize)
+    }
+    class func setFontAvenirNextRegular(with fontSize: CGFloat) -> UIFont {
+        return UIFont(name: "AvenirNext-Regular", size: fontSize) ?? UIFont.systemFont(ofSize: fontSize)
+    }
 }
